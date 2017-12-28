@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Akkey Work</title>
-    <link>http://akkey.work/</link>
-    <description>Recent content on Akkey Work</description>
+    <title>Posts on Akkey Work</title>
+    <link>http://akkey.work/post/</link>
+    <description>Recent content in Posts on Akkey Work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Dec 2017 16:40:22 +0900</lastBuildDate>
     
-	<atom:link href="http://akkey.work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://akkey.work/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
