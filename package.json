@@ -1,0 +1,24 @@
+{
+  "name": "AkkeyWork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "hugo server -t hugo_theme_beg -w -D",
+    "build": "hugo -t hugo_theme_beg -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkey247/AkkeyWork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akkey247/AkkeyWork/issues"
+  },
+  "homepage": "https://github.com/akkey247/AkkeyWork#readme"
+}

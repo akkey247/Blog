@@ -44,3 +44,4 @@ C:\Hugo\Hugo.exe
 /themes
 config.toml
 ```
+test
