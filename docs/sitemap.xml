@@ -69,13 +69,13 @@
   </url>
   
   <url>
-    <loc>https://akkey247.github.io/AkkeyWork/tags/hello/</loc>
+    <loc>https://akkey247.github.io/AkkeyWork/tags/dummy/</loc>
     <lastmod>2017-12-28T16:40:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://akkey247.github.io/AkkeyWork/categories/hugo/</loc>
+    <loc>https://akkey247.github.io/AkkeyWork/categories/dummy/</loc>
     <lastmod>2017-12-28T16:40:22+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -87,13 +87,25 @@
   </url>
   
   <url>
-    <loc>https://akkey247.github.io/AkkeyWork/tags/</loc>
+    <loc>https://akkey247.github.io/AkkeyWork/tags/taga/</loc>
     <lastmod>2017-12-28T16:40:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://akkey247.github.io/AkkeyWork/tags/world/</loc>
+    <loc>https://akkey247.github.io/AkkeyWork/tags/tagb/</loc>
+    <lastmod>2017-12-28T16:40:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://akkey247.github.io/AkkeyWork/tags/tagc/</loc>
+    <lastmod>2017-12-28T16:40:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://akkey247.github.io/AkkeyWork/tags/</loc>
     <lastmod>2017-12-28T16:40:22+09:00</lastmod>
     <priority>0</priority>
   </url>
