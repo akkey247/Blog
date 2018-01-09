@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Akkey Work</title>
-    <link>https://akkey247.github.io/AkkeyWork/tags/</link>
+    <link>http://akkey.work/tags/</link>
     <description>Recent content in Tags on Akkey Work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Dec 2017 16:40:22 +0900</lastBuildDate>
     
-	<atom:link href="https://akkey247.github.io/AkkeyWork/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://akkey.work/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dummy</title>
-      <link>https://akkey247.github.io/AkkeyWork/tags/dummy/</link>
+      <link>http://akkey.work/tags/dummy/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>https://akkey247.github.io/AkkeyWork/tags/dummy/</guid>
+      <guid>http://akkey.work/tags/dummy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Taga</title>
-      <link>https://akkey247.github.io/AkkeyWork/tags/taga/</link>
+      <link>http://akkey.work/tags/taga/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>https://akkey247.github.io/AkkeyWork/tags/taga/</guid>
+      <guid>http://akkey.work/tags/taga/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tagb</title>
-      <link>https://akkey247.github.io/AkkeyWork/tags/tagb/</link>
+      <link>http://akkey.work/tags/tagb/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>https://akkey247.github.io/AkkeyWork/tags/tagb/</guid>
+      <guid>http://akkey.work/tags/tagb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tagc</title>
-      <link>https://akkey247.github.io/AkkeyWork/tags/tagc/</link>
+      <link>http://akkey.work/tags/tagc/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>https://akkey247.github.io/AkkeyWork/tags/tagc/</guid>
+      <guid>http://akkey.work/tags/tagc/</guid>
       <description></description>
     </item>
     
