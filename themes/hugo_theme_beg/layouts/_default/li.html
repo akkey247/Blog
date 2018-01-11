@@ -12,7 +12,7 @@
   </header>
 
   {{ with .Params.thumbnail }}<a href="{{ $.Permalink }}" class="thumb" title="{{ $.Title }}" style="background-image: url({{ $.Site.BaseURL }}{{ . }});"></a>{{ end }}
-  <div class="article-body">{{ .Content }}</div>
+  <div class="summary">{{ .Summary }}</div>
 
   {{ if .Truncated }}
   <footer>

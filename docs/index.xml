@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Akkey Work</title>
+    <title>エンジニア備忘録</title>
     <link>http://akkey.work/</link>
-    <description>Recent content on Akkey Work</description>
+    <description>Recent content on エンジニア備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ja</language>
     <lastBuildDate>Thu, 28 Dec 2017 16:40:22 +0900</lastBuildDate>
     
 	<atom:link href="http://akkey.work/index.xml" rel="self" type="application/rss+xml" />
@@ -17,16 +17,7 @@
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/hello/</guid>
-      <description> Hugo でサイト作成をしたので、メモを残します。
-OSはWindowsなのであしからず。。。
-Hugo をダウンロードする 以下のページからHugoをダウンロードする。
-https://github.com/gohugoio/hugo/releases
-ダウンロードしたHugoの「Hugo.exe」を任意のディレクトリに保存する。
-C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
-サイトを作成する 以下のコマンドを実行する。
-# hugo new site new_site  new_site の部分には任意の名前を入力する。
-コマンドを実行すると、以下のファイルが作成される。
-/archetypes └ default.md /content /data /layouts /static /themes config.toml  </description>
+      <description>Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー</description>
     </item>
     
     <item>
@@ -35,7 +26,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy1/</guid>
-      <description>ダミー記事① この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事① この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -44,7 +35,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy10/</guid>
-      <description>ダミー記事⑩ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事⑩ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -53,7 +44,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy2/</guid>
-      <description>ダミー記事② この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事② この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -62,7 +53,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy3/</guid>
-      <description>ダミー記事③ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事③ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -71,7 +62,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy4/</guid>
-      <description>ダミー記事④ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事④ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -80,7 +71,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy5/</guid>
-      <description>ダミー記事⑤ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事⑤ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -89,7 +80,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy6/</guid>
-      <description>ダミー記事⑥ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事⑥ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -98,7 +89,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy7/</guid>
-      <description>ダミー記事⑦ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事⑦ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -107,7 +98,7 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy8/</guid>
-      <description>ダミー記事⑧ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事⑧ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
     </item>
     
     <item>
@@ -116,7 +107,16 @@ C:\Hugo\Hugo.exe  保存したHugo.exeにはパスをを押しておく。
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>http://akkey.work/post/dummy9/</guid>
-      <description>ダミー記事⑨ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</description>
+      <description>ダミー記事⑨ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
+    </item>
+    
+    <item>
+      <title>マークダウンサンプル</title>
+      <link>http://akkey.work/post/markdown/</link>
+      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
+      
+      <guid>http://akkey.work/post/markdown/</guid>
+      <description>Block Elements Headers 見出し 先頭に#をレベルの数だけ記述します。 # 見出し1 ## 見出し2 ### 見出し3 #### 見出し4 ##### 見出し5 ###### 見出し6 見出し1 見出し2 見出し3 見出し4</description>
     </item>
     
   </channel>

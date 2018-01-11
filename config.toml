@@ -1,3 +1,6 @@
 baseURL = "http://akkey.work/"
-languageCode = "en-us"
-title = "Akkey Work"
+languageCode = "ja"
+title = "エンジニア備忘録"
+hasCJKLanguage = true
+[blackfriday]
+  extensions = ["hardLineBreak"]
