@@ -2,5 +2,7 @@ baseURL = "http://akkey.work/"
 languageCode = "ja"
 title = "エンジニア備忘録"
 hasCJKLanguage = true
+[Params]
+  since = 2018
 [blackfriday]
   extensions = ["hardLineBreak"]
