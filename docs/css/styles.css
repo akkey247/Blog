@@ -19,6 +19,13 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: #019EEB;
+}
+a:hover {
+  color: #019EEB;
+}
+
 p {
   margin: 0;
 }
@@ -84,18 +91,32 @@ main {
 }
 
 /* Override */
+l-header {
+	min-width: 600px;
+	overflow: hidden;
+}
+
 .navbar {
   border-radius: 0;
 }
 
 .navbar-default {
-  background: url("http://akkey.work/images/top.jpeg");
+  background: linear-gradient(to top, #fff 0%, #ddd 80%, #888 100%) fixed, url("http://akkey.work/images/top.jpeg") no-repeat center 0;
+  background-blend-mode: multiply;
   height: 500px;
 }
 
 .navbar-brand {
   font-size: 50px;
+  font-weight: 500;
   line-height: 50px;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover {
+  color: #fff;
 }
 
 .page-header {
@@ -332,5 +353,3 @@ article.li.sm>header {
 .article-body figcaption a {
   color: #263238;
 }
-
-
