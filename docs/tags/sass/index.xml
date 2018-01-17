@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>エンジニア備忘録</title>
-    <link>http://akkey.work/</link>
-    <description>Recent content on エンジニア備忘録</description>
+    <title>Sass on エンジニア備忘録</title>
+    <link>http://akkey.work/tags/sass/</link>
+    <description>Recent content in Sass on エンジニア備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 17 Jan 2018 13:01:33 +0900</lastBuildDate>
     
-	<atom:link href="http://akkey.work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://akkey.work/tags/sass/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://akkey.work/post/article2/</guid>
       <description>Ruby をインストール 以下のページから RubyInstaller をダウンロードし、インストールする https://rubyinstaller.org/ 備考 ・Td/Tk サポートのインストールはチェックしなくてもよい ・Rub</description>
-    </item>
-    
-    <item>
-      <title>Hugoでサイト作成</title>
-      <link>http://akkey.work/post/article1/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/article1/</guid>
-      <description>Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー</description>
     </item>
     
   </channel>

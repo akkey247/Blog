@@ -6,117 +6,27 @@
     <description>Recent content in Posts on エンジニア備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 28 Dec 2017 16:40:22 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 13:01:33 +0900</lastBuildDate>
     
 	<atom:link href="http://akkey.work/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Compass を利用できる環境を作る</title>
+      <link>http://akkey.work/post/article2/</link>
+      <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
+      
+      <guid>http://akkey.work/post/article2/</guid>
+      <description>Ruby をインストール 以下のページから RubyInstaller をダウンロードし、インストールする https://rubyinstaller.org/ 備考 ・Td/Tk サポートのインストールはチェックしなくてもよい ・Rub</description>
+    </item>
+    
+    <item>
       <title>Hugoでサイト作成</title>
-      <link>http://akkey.work/post/hello/</link>
+      <link>http://akkey.work/post/article1/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>http://akkey.work/post/hello/</guid>
+      <guid>http://akkey.work/post/article1/</guid>
       <description>Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy1/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy1/</guid>
-      <description>ダミー記事① この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy10/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy10/</guid>
-      <description>ダミー記事⑩ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy2/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy2/</guid>
-      <description>ダミー記事② この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy3/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy3/</guid>
-      <description>ダミー記事③ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy4/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy4/</guid>
-      <description>ダミー記事④ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy5/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy5/</guid>
-      <description>ダミー記事⑤ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy6/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy6/</guid>
-      <description>ダミー記事⑥ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy7/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy7/</guid>
-      <description>ダミー記事⑦ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy8/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy8/</guid>
-      <description>ダミー記事⑧ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>ダミー記事</title>
-      <link>http://akkey.work/post/dummy9/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/dummy9/</guid>
-      <description>ダミー記事⑨ この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、</description>
-    </item>
-    
-    <item>
-      <title>マークダウンサンプル</title>
-      <link>http://akkey.work/post/markdown/</link>
-      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
-      
-      <guid>http://akkey.work/post/markdown/</guid>
-      <description>Block Elements Headers 見出し 先頭に#をレベルの数だけ記述します。 # 見出し1 ## 見出し2 ### 見出し3 #### 見出し4 ##### 見出し5 ###### 見出し6 見出し1 見出し2 見出し3 見出し4</description>
     </item>
     
   </channel>
