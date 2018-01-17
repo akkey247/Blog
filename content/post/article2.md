@@ -2,8 +2,6 @@
 date: 2018-01-17T13:01:33+09:00
 title: "Compass を利用できる環境を作る"
 draft: false
-categories:  [ "フロントエンド" ]
-tags:  [ "css", "sass", "compass" ]
 ---
 
 ## Ruby をインストール

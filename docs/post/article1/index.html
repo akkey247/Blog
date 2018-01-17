@@ -14,23 +14,23 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Hugoでサイト作成 - エンジニア備忘録</title>
+    <title>Hugoでブログを作る - エンジニア備忘録</title>
     
-<meta name="description" content="Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー">
+<meta name="description" content="はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成">
 
-<meta property="og:title" content="Hugoでサイト作成 - エンジニア備忘録">
+<meta property="og:title" content="Hugoでブログを作る - エンジニア備忘録">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://akkey.work/post/article1/">
 <meta property="og:image" content="http://akkey.work/images/default.png">
 <meta property="og:site_name" content="エンジニア備忘録">
-<meta property="og:description" content="Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー">
+<meta property="og:description" content="はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="エンジニア備忘録">
 <meta name="twitter:url" content="http://akkey.work/post/article1/">
-<meta name="twitter:title" content="Hugoでサイト作成 - エンジニア備忘録">
-<meta name="twitter:description" content="Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー">
+<meta name="twitter:title" content="Hugoでブログを作る - エンジニア備忘録">
+<meta name="twitter:description" content="はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成">
 <meta name="twitter:image" content="http://akkey.work/images/default.png">
 
 
@@ -42,7 +42,7 @@
       "@type": "WebPage",
       "@id":"http://akkey.work/"
     },
-    "headline": "Hugoでサイト作成 - エンジニア備忘録",
+    "headline": "Hugoでブログを作る - エンジニア備忘録",
     "image": {
       "@type": "ImageObject",
       "url": "http://akkey.work/images/default.png",
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "Hugo でサイト作成をしたので、メモを残します。 OSはWindowsなのであしからず。。。 Hugo をダウンロードする 以下のページからHugoをダウンロー"
+    "description": "はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成"
   }
 </script>
 
@@ -111,7 +111,7 @@
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://akkey.work/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">Hugoでサイト作成</li>
+        <li class="active">Hugoでブログを作る</li>
       </ol>
     </nav>
 
@@ -123,50 +123,190 @@
       
     </ul>
 
-    <h1 class="title">Hugoでサイト作成</h1>
+    <h1 class="title">Hugoでブログを作る</h1>
   </header>
 
   
 
   <div class="article-body">
 
-<p>Hugo でサイト作成をしたので、メモを残します。<br />
-OSはWindowsなのであしからず。。。</p>
+<p>はじめまして、Akkey(アッキー)と申します。<br />
+今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成までの手順をまとめてみました。</p>
 
 <h2 id="hugo-をダウンロードする">Hugo をダウンロードする</h2>
 
-<p>以下のページからHugoをダウンロードする。</p>
+<p>以下のページからHugoをダウンロードします。</p>
 
 <p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
 
-<p>ダウンロードしたHugoの「Hugo.exe」を任意のディレクトリに保存する。</p>
+<p>そして、ダウンロードしたファイルの中の「Hugo.exe」を任意のディレクトリに保存。</p>
 
 <pre><code>C:\Hugo\Hugo.exe
 </code></pre>
 
-<p>保存したHugo.exeにはパスをを押しておく。</p>
+<p>保存したHugo.exeにはパスを通しておきます。</p>
 
-<h2 id="サイトを作成する">サイトを作成する</h2>
+<h2 id="雛形サイトを作成する">雛形サイトを作成する</h2>
 
-<p>以下のコマンドを実行する。</p>
+<p>まずは、以下のコマンドを実行。</p>
 
 <pre><code># hugo new site new_site
 </code></pre>
 
-<p><code>new_site</code> の部分には任意の名前を入力する。<br />
-コマンドを実行すると、以下のファイルが作成される。</p>
+<p><code>new_site</code> の部分には任意の名前を入力してください。<br />
+コマンドを実行すると、以下のファイルが作成されます。</p>
 
-<pre><code>/archetypes
-  └ default.md
-/content
-/data
-/layouts
-/static
-/themes
-config.toml
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md  // 記事の雛形
+├ content/    // 記事など
+├ data/       // 不明
+├ layouts/    // レイアウト(?)
+├ static/     // 静的ファイル
+├ themes/     // テーマ
+└ config.toml // 設定ファイル
 </code></pre>
 
-<p>test</p>
+<p>とりあえず、作成されたディレクトリに移動しておきます。</p>
+
+<pre><code>cd new_site
+</code></pre>
+
+<p>一応この状態でも動くので、確認してみます。<br />
+以下のコマンドを実行すると、サーバーが立ち上がりプレビューを確認することができます。</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>コマンド実行後、 <code>localhost:1313</code> にアクセスすると真っ白なサイトが表示されます。<br />
+まだ、何も触っていないので真っ白です。</p>
+
+<h2 id="テーマをダウンロードして適用する">テーマをダウンロードして適用する</h2>
+
+<p>テーマを適用してみます。<br />
+以下のサイトから好きなテーマをダウンロードしてきます。</p>
+
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+
+<p>ダウンロードしたテーマは <code>themes</code> ディレクトリの中に入れておいてください。<br />
+今回は <code>hugo_theme_beg</code> というテーマを使わせていただきました。</p>
+
+<p><a href="https://github.com/dim0627/hugo_theme_beg">https://github.com/dim0627/hugo_theme_beg</a></p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/  // ★ダウンロードしたテーマ
+└ config.toml
+</code></pre>
+
+<p>テーマを適用してプレビューするには、以下のコマンドを実行します。</p>
+
+<pre><code>hugo server -t hugo_theme_beg
+</code></pre>
+
+<p>まだ、この状態では記事を投稿していないので、記事は表示されません。</p>
+
+<h2 id="記事を投稿する">記事を投稿する</h2>
+
+<p>以下のコマンドを実行することで記事が投稿できます。</p>
+
+<pre><code>hugo new post/newpage.md
+</code></pre>
+
+<p><code>newpage.md</code> の部分は任意の名前を入力してください。<br />
+実行すると <code>content/post</code> ディレクトリの配下に <code>newpage.md</code> が作成されます。</p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ └ post/
+├   └ newpage.md  // ★作成した記事
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/
+└ config.toml
+</code></pre>
+
+<p>しかし、このままではプレビューしても記事が表示されないので、プレビューの前に少しページの設定を変更します。<br />
+まず、 <code>newpage.md</code> を開き <code>draft: true</code> を <code>draft: false</code> に変更します。これによって下書き状態が解除されます。<br />
+(補足すると <code>---</code> で括られた部分は記事の設定を書く場所です。)<br />
+また、記事の中身が無いので、適当な内容も書いておきます。<br />
+とりあえず、おなじみの「Hello World!!」と書いておきました。</p>
+
+<pre><code>---
+title: &quot;Newpage&quot;
+date: 2018-01-01T00:00:00+09:00
+draft: false
+---
+
+Hello World!!
+</code></pre>
+
+<p>修正を保存して、プレビューしてみると記事が作成されていることが分かります。</p>
+
+<h2 id="記事の更新をリアルタイムに反映する">記事の更新をリアルタイムに反映する</h2>
+
+<p>プレビューしている状態で記事の更新がリアルタイムに反映したい時は <code>-watch</code> オプションを付けます。<br />
+このオプションを付けることによって、記事の更新がリアルタイムに反映されるようになります。</p>
+
+<pre><code>hugo server -t hugo_theme_beg -watch
+</code></pre>
+
+<p>と言いたかったのですが、付けなくても反映されるらしいですね。<br />
+ちなみに短縮形で <code>-w</code> と書いても良いようです。</p>
+
+<h2 id="サイトをビルドする">サイトをビルドする</h2>
+
+<p>実際にサイトをサーバーに置いて稼働させるためにはビルドを行うことになります。<br />
+ビルドするには、以下のコマンドを実行します。</p>
+
+<pre><code>hugo -t hugo_theme_beg
+</code></pre>
+
+<p>実行すると、 <code>public</code> というディレクトリが作成されて、その中にビルドされたサイトが作成されます。</p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ └ post/
+├   └ newpage.md
+├ data/
+├ public/       // ★ビルドされたサイト
+├ ├ categories  // カテゴリページ
+├ ├ css         // CSSファイル
+├ ├ page        // 記事一覧ページ
+├ ├ post        // 記事
+├ ├ tags        // タグページ
+├ ├ 404.html    // 404エラーページ
+├ ├ index.html  // トップページ
+├ ├ index.xml   // 不明
+├ └ sitemap.xml // サイトマップ
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/
+└ config.toml
+</code></pre>
+
+<p>この <code>public</code> ディレクトリの配下が実際のサイトになります。<br />
+サーバーに置いて、アクセスするとプレビュー時と同じように表示されるはずです。</p>
+
+<h2 id="終わりに">終わりに</h2>
+
+<p>実際には、Github Pages を利用してサイト公開までやっているのですが、内容がごちゃごちゃするかなと思い、ここまでの内容に留めました。<br />
+Github に上げて公開する手順もまた記事にしたいですね。<br />
+コマンドのオプションや設定ファイルの書き方についても、また書いていこうと思います。<br />
+それでは！</p>
 </div>
 
   <footer class="article-footer">
@@ -222,23 +362,19 @@ config.toml
       
       <a href="http://akkey.work/post/article2/" class="list-group-item">Compass を利用できる環境を作る</a>
       
-      <a href="http://akkey.work/post/article1/" class="list-group-item">Hugoでサイト作成</a>
+      <a href="http://akkey.work/post/article1/" class="list-group-item">Hugoでブログを作る</a>
       
       <a href="http://akkey.work/categories/" class="list-group-item">Categories</a>
-      
-      <a href="http://akkey.work/tags/compass/" class="list-group-item">Compass</a>
-      
-      <a href="http://akkey.work/tags/css/" class="list-group-item">Css</a>
       
       <a href="http://akkey.work/tags/hugo/" class="list-group-item">Hugo</a>
       
       <a href="http://akkey.work/post/" class="list-group-item">Posts</a>
       
-      <a href="http://akkey.work/tags/sass/" class="list-group-item">Sass</a>
-      
       <a href="http://akkey.work/tags/" class="list-group-item">Tags</a>
       
       <a href="http://akkey.work/" class="list-group-item">エンジニア備忘録</a>
+      
+      <a href="http://akkey.work/categories/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/" class="list-group-item">フロントエンド</a>
       
     </div>
   </section>
@@ -261,13 +397,7 @@ config.toml
     </div>
     <div class="list-group">
       
-      <a href="http://akkey.work/tags/compass" class="list-group-item">compass</a>
-      
-      <a href="http://akkey.work/tags/css" class="list-group-item">css</a>
-      
       <a href="http://akkey.work/tags/hugo" class="list-group-item">hugo</a>
-      
-      <a href="http://akkey.work/tags/sass" class="list-group-item">sass</a>
       
     </div>
   </section>
