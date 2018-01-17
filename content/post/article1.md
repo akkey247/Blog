@@ -28,7 +28,7 @@ C:\Hugo\Hugo.exe
 まずは、以下のコマンドを実行。
 
 ```
-# hugo new site new_site
+hugo new site new_site
 ```
 
 `new_site` の部分には任意の名前を入力してください。
