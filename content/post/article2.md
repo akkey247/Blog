@@ -1,57 +1,66 @@
 ---
 date: 2018-01-17T13:01:33+09:00
-title: "Compass を利用できる環境を作る"
+title: "Compassを使える環境を整える"
 draft: false
 ---
 
-## Ruby をインストール
+ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。
+ちなみにWindows環境です。
 
-以下のページから RubyInstaller をダウンロードし、インストールする
+## Rubyをインストールする
+
+まずは準備から。
+以下のページから RubyInstaller をダウンロードしてきてインストールします。
+
 https://rubyinstaller.org/
 
-備考
-・Td/Tk サポートのインストールはチェックしなくてもよい
+[インストール時のメモ]
+・Td/Tk サポートのインストールはチェックしなくてもOK
 ・Rubyの実行ファイルへパスを通す設定にチェックしておく
 ・.rb,.rbwのファイル関連付け設定のチェックは任意
 
-## Compass をインストール
+## Compassをインストールする
 
-### コマンドプロンプトで以下のコマンドを実行
+Rubyのインストールが終わったら、早速Compassをインストールします。
+コマンドプロンプトで以下のコマンドを実行します。
 
 ```
 gem update --system
 gem install compass
 ```
 
-## compass の初期化
+インストールが終わればCompassを使う環境作成は完了です。
+と、本来の目的は果たしたわけですが、使い方についても調べてみます。
 
-### コマンドプロンプトで以下のコマンドを実行
-コマンドプロンプトで Compass を利用したいディレクトリまで移動して以下のコメンドを実行
+## Compass利用に必要なファイルを作成
+
+Compassを利用する前にはまず初期化をするみたいですね。
+Compassを利用したいディレクトリで以下のコマンドを実行することで、必要なファイルが作成されます。
 
 ```
 compass create
 ```
 
-最小限の構成で初期化したい場合は以下のコマンドを使う
+最小限の構成で初期化したい場合は `--bare` オプションを付けると良いようです。
 
 ```
 compass create --bare
 ```
 
-コマンド実行後、以下のディレクトリが作成されていれば成功
+実行後、以下のディレクトリが作成されていれば成功です。(ちなみに `--bare` オプション有りの場合です。)
+
 ```
 root
 ├ sass/
 └ config.rb
 ```
 
-## compass でビルドしてみる
+## scssをビルドする
 
-試しにサンプルコードをビルドしてみる。
+では早速、試しにscssのサンプルコードをビルドしてみます。
+まずは、対象のscssファイルを作成して、 `sass` ディレクトリ配下に設置します。
 
-### sassディレクトリ配下にサンプルコードのファイルを配置する。
-
-test.scss
+sample.scss
 ```
 @import "compass/utilities/general/clearfix";
 .sample {
@@ -59,20 +68,30 @@ test.scss
 }
 ```
 
-### 以下のコマンドを実行
+```
+root
+├ sass/
+├ └ sample.sass
+└ config.rb
+```
+
+ビルドをしてみます。
+以下のコマンドを実行。
 
 ```
 compass watch
 ```
 
-コマンド実行後、stylesheet/, .sass-cache/ のディレクトリが作成され、 stylesheet/ 配下にサンプルコードのビルド結果ファイルが格納される
+実行すると、 `stylesheet/` , `.sass-cache/` ディレクトリが作成されます。
+`stylesheet/` ディレクトリ配下にサンプルコードのビルド結果ファイルが格納されます。
+
 ```
 root
 ├ .sass-cache/
 ├ sass/
-│  └ test.scss
+│  └ sample.scss
 ├ stylesheet/
-│  └ test.css
+│  └ sample.css
 └ config.rb
 ```
 
@@ -84,4 +103,5 @@ test.scss
   *zoom: 1;
 }
 ```
-test
+
+これでビルド完了です。
