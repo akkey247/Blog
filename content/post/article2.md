@@ -95,7 +95,7 @@ root
 └ config.rb
 ```
 
-test.scss
+test.css
 ```
 /* line 2, ../sass/test.scss */
 .sample {
