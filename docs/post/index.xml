@@ -6,10 +6,19 @@
     <description>Recent content in Posts on エンジニア備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 17 Jan 2018 13:01:33 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2018 12:19:52 +0900</lastBuildDate>
     
 	<atom:link href="http://akkey.work/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugoで作ったページをGitHub Pagesで公開する</title>
+      <link>http://akkey.work/post/article3/</link>
+      <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
+      
+      <guid>http://akkey.work/post/article3/</guid>
+      <description>以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず</description>
+    </item>
     
     <item>
       <title>Compassを使える環境を整える</title>

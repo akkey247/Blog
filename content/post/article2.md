@@ -3,7 +3,7 @@ date: 2018-01-17T13:01:33+09:00
 title: "Compassを使える環境を整える"
 draft: false
 categories:  [ "フロントエンド" ]
-tags:  [ "css", "SCSS(SASS)", "Compass" ]
+tags:  [ "CSS", "SCSS(SASS)", "Compass" ]
 ---
 
 ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。
