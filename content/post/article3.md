@@ -1,5 +1,5 @@
 ---
-title: "Hugoで作ったページをGitHub Pagesで公開する"
+title: "Hugoで作ったブログをGitHub Pagesで公開する"
 date: 2018-01-18T12:19:52+09:00
 draft: false
 categories:  [ "フロントエンド" ]
