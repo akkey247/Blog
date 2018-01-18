@@ -184,9 +184,9 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 
 <p>sample.scss</p>
 
-<pre><code>@import &quot;compass/utilities/general/clearfix&quot;;
+<pre><code>@import 'compass';
 .sample {
-    @include clearfix;
+  @include border-radius(3px);
 }
 </code></pre>
 
@@ -216,21 +216,85 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 
 <p>sample.css</p>
 
-<pre><code>/* line 2, ../sass/test.scss */
+<pre><code>/* line 2, ../sass/sample.scss */
 .sample {
-  overflow: hidden;
-  *zoom: 1;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 </code></pre>
 
 <p>これでビルド完了です。</p>
+
+<h2 id="おまけ１-エラーでビルド出来ない">おまけ１: エラーでビルド出来ない</h2>
+
+<p>最初ビルドがうまく動かない時がありました。<br />
+エラーメッセージにはこんな表示が。</p>
+
+<pre><code>Error: Invalid Windows-31J character
+</code></pre>
+
+<p>調べてみると <code>config.rb</code> に以下の１行を追加することでビルド出来るようになるようです。</p>
+
+<pre><code>Encoding.default_external = 'utf-8'
+</code></pre>
+
+<p>[参考]<br />
+<a href="http://blog.a4works.co.jp/archives/326">Windows環境のcompassで”Invalid Windows-31J character”のエラー</a></p>
+
+<h2 id="おまけ２-ビルド後のcssのコメントが邪魔">おまけ２: ビルド後のcssのコメントが邪魔</h2>
+
+<p>個人的にビルドされたCSSに入る↓このコメントが邪魔だったので、消す方法を探してみました。<br />
+どうやら、元々 <code>config.rb</code> に書いてある <code># line_comments = false</code> をコメント解除すれば良いみたいですね。</p>
+
+<pre><code>require 'compass/import-once/activate'
+
+http_path = &quot;/&quot;
+css_dir = &quot;stylesheets&quot;
+sass_dir = &quot;sass&quot;
+images_dir = &quot;images&quot;
+javascripts_dir = &quot;javascripts&quot;
+
+# ビルド後のコメント非表示
+line_comments = false
+</code></pre>
 </div>
 
   <footer class="article-footer">
     
     
     
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://akkey.work/categories/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/">フロントエンド</a></li>
+          
+        </ul>
+      </div>
+    </section>
     
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://akkey.work/tags/css/">css</a></li>
+          
+          <li><a href="http://akkey.work/tags/scsssass/">SCSS(SASS)</a></li>
+          
+          <li><a href="http://akkey.work/tags/compass/">Compass</a></li>
+          
+        </ul>
+      </div>
+    </section>
     
     
   </footer>
@@ -257,15 +321,19 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
       
       <a href="http://akkey.work/categories/" class="list-group-item">Categories</a>
       
+      <a href="http://akkey.work/tags/compass/" class="list-group-item">Compass</a>
+      
+      <a href="http://akkey.work/tags/css/" class="list-group-item">Css</a>
+      
       <a href="http://akkey.work/tags/hugo/" class="list-group-item">Hugo</a>
       
       <a href="http://akkey.work/post/" class="list-group-item">Posts</a>
       
+      <a href="http://akkey.work/tags/scsssass/" class="list-group-item">Scsssass</a>
+      
       <a href="http://akkey.work/tags/" class="list-group-item">Tags</a>
       
       <a href="http://akkey.work/" class="list-group-item">エンジニア備忘録</a>
-      
-      <a href="http://akkey.work/categories/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/" class="list-group-item">フロントエンド</a>
       
     </div>
   </section>
@@ -288,7 +356,13 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
     </div>
     <div class="list-group">
       
+      <a href="http://akkey.work/tags/compass" class="list-group-item">compass</a>
+      
+      <a href="http://akkey.work/tags/css" class="list-group-item">css</a>
+      
       <a href="http://akkey.work/tags/hugo" class="list-group-item">hugo</a>
+      
+      <a href="http://akkey.work/tags/scsssass" class="list-group-item">scsssass</a>
       
     </div>
   </section>

@@ -2,6 +2,8 @@
 date: 2018-01-17T13:01:33+09:00
 title: "Compassを使える環境を整える"
 draft: false
+categories:  [ "フロントエンド" ]
+tags:  [ "css", "SCSS(SASS)", "Compass" ]
 ---
 
 ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。
@@ -62,9 +64,9 @@ root
 
 sample.scss
 ```
-@import "compass/utilities/general/clearfix";
+@import 'compass';
 .sample {
-    @include clearfix;
+  @include border-radius(3px);
 }
 ```
 
@@ -97,11 +99,48 @@ root
 
 sample.css
 ```
-/* line 2, ../sass/test.scss */
+/* line 2, ../sass/sample.scss */
 .sample {
-  overflow: hidden;
-  *zoom: 1;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 ```
 
 これでビルド完了です。
+
+## おまけ１: エラーでビルド出来ない
+
+最初ビルドがうまく動かない時がありました。
+エラーメッセージにはこんな表示が。
+
+```
+Error: Invalid Windows-31J character
+```
+
+調べてみると `config.rb` に以下の１行を追加することでビルド出来るようになるようです。
+
+```
+Encoding.default_external = 'utf-8'
+```
+
+[参考]
+[Windows環境のcompassで”Invalid Windows-31J character”のエラー](http://blog.a4works.co.jp/archives/326)
+
+## おまけ２: ビルド後のcssのコメントが邪魔
+
+個人的にビルドされたCSSに入る↓このコメントが邪魔だったので、消す方法を探してみました。
+どうやら、元々 `config.rb` に書いてある `# line_comments = false` をコメント解除すれば良いみたいですね。
+
+```
+require 'compass/import-once/activate'
+
+http_path = "/"
+css_dir = "stylesheets"
+sass_dir = "sass"
+images_dir = "images"
+javascripts_dir = "javascripts"
+
+# ビルド後のコメント非表示
+line_comments = false
+```

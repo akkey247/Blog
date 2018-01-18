@@ -18,6 +18,18 @@
   </url>
   
   <url>
+    <loc>http://akkey.work/tags/compass/</loc>
+    <lastmod>2018-01-17T13:01:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://akkey.work/tags/css/</loc>
+    <lastmod>2018-01-17T13:01:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://akkey.work/tags/hugo/</loc>
     <lastmod>2017-12-28T16:40:22+09:00</lastmod>
     <priority>0</priority>
@@ -30,8 +42,14 @@
   </url>
   
   <url>
+    <loc>http://akkey.work/tags/scsssass/</loc>
+    <lastmod>2018-01-17T13:01:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://akkey.work/tags/</loc>
-    <lastmod>2017-12-28T16:40:22+09:00</lastmod>
+    <lastmod>2018-01-17T13:01:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -43,7 +61,7 @@
   
   <url>
     <loc>http://akkey.work/categories/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/</loc>
-    <lastmod>2017-12-28T16:40:22+09:00</lastmod>
+    <lastmod>2018-01-17T13:01:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
