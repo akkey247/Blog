@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
 @import '_base.scss';
+@import url('https://fonts.googleapis.com/css?family=Saira:700');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 /* settings */
 $header-back-color: #b22222;
-$header-font-color: #ffffff;
+$header-font1-color: #000000;
+$header-font2-color: #ffffff;
 $main-back-color: #f1f1f1;
 $aticle-back-color: #ffffff;
 $accent-color: #b22222;
@@ -25,17 +27,26 @@ body {
 /* Parts:header */
 .navbar {
   border-radius: 0;
+  min-height: 0;
+  margin-bottom: 50px;
 }
 
 .navbar-default {
   border: 0;
   background-color: $header-back-color;
+  height: 47px;
+  padding-top: 3px;
   .navbar-brand {
-    font-size: 2.2rem;
-    color: $header-font-color;
+    font-family: Saira;
+    font-weight: 700;
+    font-size: 55px;
+    color: $header-font1-color;
     &:link,
     &:visited {
-      color: $header-font-color;
+      color: $header-font1-color;
+    }
+    span {
+      color: $header-font2-color;
     }
   }
 }
@@ -88,7 +99,7 @@ article {
       line-height: 3.4rem;
       font-weight: 500;
     }
-    
+
     a {
       color: $link-color;
       text-decoration: none;
@@ -105,14 +116,14 @@ article {
     h1, h2, h3 {
       font-weight: 700;
     }
-    
+
     h1 {
       font-size: 2.4rem;
       border-bottom: 1px solid $header-back-color;
       padding-top: .5em;
       margin-top: 1.5em;
     }
-    
+
     h2 {
       font-size: 2rem;
       margin-top: 4.6rem;
@@ -120,11 +131,11 @@ article {
       border-bottom: 1px solid $header-back-color;
       padding-bottom: .6rem;
     }
-    
+
     h3 {
       margin-top: 1.8em;
     }
-    
+
     hr {
       height: 0;
       margin: 15px 0;
@@ -133,42 +144,42 @@ article {
       border: 0;
       border-bottom: 3px solid $header-back-color;
     }
-    
+
     ul {
       margin: 1em 0 1em 2em;
     }
-    
+
     ol {
       margin: 1em 0 1em 2em;
     }
-    
+
     ul li, ol li {
       margin-top: .5em;
       margin-bottom: .5em;
     }
-    
+
     ul ul, ul ol, ol ol, ol ul {
       margin-top: 0;
       margin-bottom: 0;
     }
-    
+
     blockquote {
       margin: 1em 0;
       border-left: 5px solid $accent-color;
       padding-left: .6em;
       color: $font-sub-color;
     }
-    
+
     dt {
       font-weight: bold;
       margin-left: 1em;
     }
-    
+
     dd {
       margin-left: 2em;
       margin-bottom: 1em;
     }
-    
+
     table {
       font-size: inherit;
       font: 100%;
@@ -178,30 +189,30 @@ article {
       border-top: 1px solid $aticle-back-color;
       border-left: 1px solid $aticle-back-color;
     }
-    
+
     table th {
       background-color: $main-back-color;
     }
-    
+
     table th, table td {
       padding: 10px;
       vertical-align: top;
       border-right: 1px solid $aticle-back-color;
       border-bottom: 1px solid $aticle-back-color;
     }
-    
+
     input[type=text], input[type=password], input[type=image], textarea {
       font: 99% helvetica, arial, freesans, sans-serif;
     }
-    
+
     select, option {
       padding: 0 .25em;
     }
-    
+
     optgroup {
       margin-top: .5em;
     }
-    
+
     abbr {
       border-bottom: none;
     }
@@ -209,7 +220,7 @@ article {
     pre, code {
       font-family: Consolas, Inconsolata, Monaco, monospace;
     }
-    
+
     pre {
       margin: 1rem 0;
       background-color: $code-back-color;
@@ -224,7 +235,7 @@ article {
         color: $code-font-color;
       }
     }
-    
+
     code {
       font-size: 1.4rem;
       background-color: $main-back-color;
