@@ -10,6 +10,7 @@
     "start": "hugo server -t hugo_theme_beg -w -D",
     "build": "hugo -t hugo_theme_beg -d docs",
     "build-all": "hugo -t hugo_theme_beg -d docs -D",
+    "server": "hugo server -t original_thame -w -D",
     "server-1": "hugo server -t beautifulhugo -w -D",
     "server-2": "hugo server -t hugo-zen -w -D"
   },
