@@ -34,13 +34,14 @@ body {
 .navbar-default {
   border: 0;
   background-color: $header-back-color;
-  height: 47px;
-  padding-top: 3px;
   .navbar-brand {
+    height: 47px;
+    padding: 1px 0 0 15px;
     font-family: Saira;
     font-weight: 700;
     font-size: 55px;
     color: $header-font1-color;
+    line-height: 1em;
     &:link,
     &:visited {
       color: $header-font1-color;
@@ -48,6 +49,9 @@ body {
     span {
       color: $header-font2-color;
     }
+  }
+  .navbar-toggle {
+    margin: 7px 15px 6px 0;
   }
 }
 

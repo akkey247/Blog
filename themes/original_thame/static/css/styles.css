@@ -7,7 +7,7 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 img {
@@ -43,20 +43,24 @@ body {
 .navbar-default {
   border: 0;
   background-color: #b22222;
-  height: 47px;
-  padding-top: 3px;
 }
 .navbar-default .navbar-brand {
+  height: 47px;
+  padding: 1px 0 0 15px;
   font-family: Saira;
   font-weight: 700;
   font-size: 55px;
   color: #000000;
+  line-height: 1em;
 }
 .navbar-default .navbar-brand:link, .navbar-default .navbar-brand:visited {
   color: #000000;
 }
 .navbar-default .navbar-brand span {
   color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  margin: 7px 15px 6px 0;
 }
 
 /* Parts:facts */
