@@ -103,9 +103,9 @@ article .title a {
 }
 article .article-body {
   /*
-
+  
   Darcula color scheme from the JetBrains family of IDEs
-
+  
   */
 }
 article .article-body p {
@@ -291,4 +291,25 @@ article .article-body .hljs-comment,
 article .article-body .hljs-deletion,
 article .article-body .hljs-meta {
   color: #7f7f7f;
+}
+
+/* Parts:article */
+.panel {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.panel-default > .panel-heading {
+  background-color: transparent;
+  border: none;
+}
+.panel-default .panel-title {
+  font-weight: 700;
+}
+.panel-default > .list-group .list-group-item {
+  border: none;
+}
+.panel-default > .list-group .list-group-item:last-child {
+  border: none;
 }

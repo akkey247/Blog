@@ -1,5 +1,5 @@
 {
-  "name": "AkkeyWork",
+  "name": "dev.Engine",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,12 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "hugo server -t hugo_theme_beg -w -D",
-    "build": "hugo -t hugo_theme_beg -d docs",
-    "build-all": "hugo -t hugo_theme_beg -d docs -D",
-    "server": "hugo server -t original_thame -w -D",
-    "server-1": "hugo server -t beautifulhugo -w -D",
-    "server-2": "hugo server -t hugo-zen -w -D"
+    "start": "hugo server -t original_thame -w -D",
+    "build": "hugo -t original_thame -d docs",
+    "build-all": "hugo -t original_thame -d docs -D",
+    "server-1": "hugo server -t hugo_theme_beg -w -D",
+    "server-2": "hugo server -t beautifulhugo -w -D",
+    "server-3": "hugo server -t hugo-zen -w -D"
   },
   "repository": {
     "type": "git",

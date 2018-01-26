@@ -17,23 +17,7 @@
   <div class="article-body">{{ .Content }}</div>
 
   <footer class="article-footer">
-    {{ $params := .Params }}
-    {{ range $key, $value := $.Site.Taxonomies }}
-    {{ if isset $params $key }}
-    <section class="bordered">
-      <header>
-        <div class="panel-title">{{ $key | upper }}</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          {{ range (index $params $key) }}
-          <li><a href="{{ $.Site.BaseURL }}{{ $key | urlize }}/{{ . | urlize }}/">{{ . }}</a></li>
-          {{ end }}
-        </ul>
-      </div>
-    </section>
-    {{ end }}
-    {{ end }}
+    <!--何か入れる予定-->
   </footer>
 
 </article>

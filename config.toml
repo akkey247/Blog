@@ -1,6 +1,6 @@
 baseURL = "http://akkey.work/"
 languageCode = "ja"
-title = "エンジニア備忘録"
+title = "dev.Engine"
 hasCJKLanguage = true
 [Params]
   since = 2018
