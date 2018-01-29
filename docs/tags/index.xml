@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on dev.Engine</title>
-    <link>http://akkey.work/tags/</link>
+    <link>http://dev-n-gine.akkey.net//tags/</link>
     <description>Recent content in Tags on dev.Engine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 17 Jan 2018 13:01:33 +0900</lastBuildDate>
     
-	<atom:link href="http://akkey.work/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dev-n-gine.akkey.net//tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Compass</title>
-      <link>http://akkey.work/tags/compass/</link>
+      <link>http://dev-n-gine.akkey.net//tags/compass/</link>
       <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
       
-      <guid>http://akkey.work/tags/compass/</guid>
+      <guid>http://dev-n-gine.akkey.net//tags/compass/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>http://akkey.work/tags/css/</link>
+      <link>http://dev-n-gine.akkey.net//tags/css/</link>
       <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
       
-      <guid>http://akkey.work/tags/css/</guid>
+      <guid>http://dev-n-gine.akkey.net//tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github Pages</title>
-      <link>http://akkey.work/tags/github-pages/</link>
+      <link>http://dev-n-gine.akkey.net//tags/github-pages/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>http://akkey.work/tags/github-pages/</guid>
+      <guid>http://dev-n-gine.akkey.net//tags/github-pages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://akkey.work/tags/hugo/</link>
+      <link>http://dev-n-gine.akkey.net//tags/hugo/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>http://akkey.work/tags/hugo/</guid>
+      <guid>http://dev-n-gine.akkey.net//tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scsssass</title>
-      <link>http://akkey.work/tags/scsssass/</link>
+      <link>http://dev-n-gine.akkey.net//tags/scsssass/</link>
       <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
       
-      <guid>http://akkey.work/tags/scsssass/</guid>
+      <guid>http://dev-n-gine.akkey.net//tags/scsssass/</guid>
       <description></description>
     </item>
     

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dev.Engine</title>
-    <link>http://akkey.work/</link>
+    <link>http://dev-n-gine.akkey.net//</link>
     <description>Recent content on dev.Engine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 18 Jan 2018 12:19:52 +0900</lastBuildDate>
     
-	<atom:link href="http://akkey.work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dev-n-gine.akkey.net//index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
-      <link>http://akkey.work/post/article3/</link>
+      <link>http://dev-n-gine.akkey.net//post/article3/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>http://akkey.work/post/article3/</guid>
+      <guid>http://dev-n-gine.akkey.net//post/article3/</guid>
       <description>以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず</description>
     </item>
     
     <item>
       <title>Compassを使える環境を整える</title>
-      <link>http://akkey.work/post/article2/</link>
+      <link>http://dev-n-gine.akkey.net//post/article2/</link>
       <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
       
-      <guid>http://akkey.work/post/article2/</guid>
+      <guid>http://dev-n-gine.akkey.net//post/article2/</guid>
       <description>ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。 ちなみにWindo</description>
     </item>
     
     <item>
       <title>Hugoでブログを作る</title>
-      <link>http://akkey.work/post/article1/</link>
+      <link>http://dev-n-gine.akkey.net//post/article1/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>http://akkey.work/post/article1/</guid>
+      <guid>http://dev-n-gine.akkey.net//post/article1/</guid>
       <description>はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成</description>
     </item>
     
