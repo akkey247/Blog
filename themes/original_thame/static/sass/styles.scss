@@ -99,7 +99,7 @@ article {
   .article-body {
     p {
       font-size: 1.7rem;
-      margin: 1rem 0;
+      margin: 3rem 0;
       line-height: 3.4rem;
       font-weight: 500;
     }
@@ -115,6 +115,11 @@ article {
       &:visited code {
         color: $link-color;
       }
+    }
+
+    img {
+      box-shadow:0 0 8px #fff, 0 0 8px #ccc, 0 0 2px #aaa;
+      margin: 10px 0;
     }
 
     h1, h2, h3 {

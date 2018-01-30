@@ -2,17 +2,17 @@
 date: 2018-01-17T13:01:33+09:00
 title: "Compassを使える環境を整える"
 draft: false
-categories:  [ "フロントエンド" ]
+categories:  [ "技術系" ]
 tags:  [ "CSS", "SCSS(SASS)", "Compass" ]
 ---
 
-ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。
-ちなみにWindows環境です。
+ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompassを利用してみることにしました。
+今回も環境はWindowsです。
 
 ## Rubyをインストールする
 
 まずは準備から。
-以下のページから RubyInstaller をダウンロードしてきてインストールします。
+以下のページから RubyInstaller をダウンロードし、インストールします。
 
 https://rubyinstaller.org/
 
@@ -31,13 +31,19 @@ gem update --system
 gem install compass
 ```
 
-インストールが終わればCompassを使う環境作成は完了です。
-と、本来の目的は果たしたわけですが、使い方についても調べてみます。
+インストールが終わったら、ちゃんと入っているか確認してみます。
 
-## Compass利用に必要なファイルを作成
+```
+compass -v
+```
 
-Compassを利用する前にはまず初期化をするみたいですね。
-Compassを利用したいディレクトリで以下のコマンドを実行することで、必要なファイルが作成されます。
+これでバージョンが表示されればOK、Compassを使う環境作成は完了です。
+と、本来の目的は果たしたわけですが、ここから使い方についても調べてみます。
+
+## Compassの新規プロジェクト作成
+
+Compassを利用する前にはまず新規プロジェクトを作る必要があるようですね。
+Compassを利用したいディレクトリで以下のコマンドを実行することで、新規プロジェクトが作成されます。
 
 ```
 compass create
@@ -53,14 +59,14 @@ compass create --bare
 
 ```
 root
-├ sass/
-└ config.rb
+├ sass/      // Sass(SCSS)ファイルが入るディレクトリ
+└ config.rb  // Compass設定ファイル
 ```
 
 ## scssをビルドする
 
-では早速、試しにscssのサンプルコードをビルドしてみます。
-まずは、対象のscssファイルを作成して、 `sass` ディレクトリ配下に設置します。
+では早速、試しにSCSSのサンプルコードをビルドしてみます。
+まずは、対象のSCSSファイルを作成して、 `sass` ディレクトリ配下に設置します。
 
 sample.scss
 ```
@@ -73,7 +79,7 @@ sample.scss
 ```
 root
 ├ sass/
-├ └ sample.sass
+├ └ sample.sass  // ★追加したファイル
 └ config.rb
 ```
 
@@ -92,8 +98,8 @@ root
 ├ .sass-cache/
 ├ sass/
 │  └ sample.scss
-├ stylesheet/
-│  └ sample.css
+├ stylesheet/    // ★ビルド後のCSSが入るディレクトリ
+│  └ sample.css  // ★CSSファイル
 └ config.rb
 ```
 
@@ -109,7 +115,7 @@ sample.css
 
 これでビルド完了です。
 
-## おまけ１: エラーでビルド出来ない
+## エラーでビルド出来ない時
 
 最初ビルドがうまく動かない時がありました。
 エラーメッセージにはこんな表示が。
@@ -127,7 +133,7 @@ Encoding.default_external = 'utf-8'
 [参考]
 [Windows環境のcompassで”Invalid Windows-31J character”のエラー](http://blog.a4works.co.jp/archives/326)
 
-## おまけ２: ビルド後のcssのコメントが邪魔
+## ビルド後のcssのコメントが邪魔な時
 
 個人的にビルドされたCSSに入る↓このコメントが邪魔だったので、消す方法を探してみました。
 どうやら、元々 `config.rb` に書いてある `# line_comments = false` をコメント解除すれば良いみたいですね。

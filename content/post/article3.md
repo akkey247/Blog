@@ -2,7 +2,7 @@
 title: "Hugoで作ったブログをGitHub Pagesで公開する"
 date: 2018-01-18T12:19:52+09:00
 draft: false
-categories:  [ "フロントエンド" ]
+categories:  [ "技術系" ]
 tags:  [ "GitHub Pages", "Hugo" ]
 ---
 
@@ -12,6 +12,8 @@ tags:  [ "GitHub Pages", "Hugo" ]
 
 まずは、GitHubでリポジトリを作成します。
 仮に `Blog` という名前のリポジトリで作成してみます。
+
+![リポジトリ作成](/201801181219/img/1.png)
 
 作り終わったら、ローカル環境へクローンしてきます。
 
@@ -72,7 +74,9 @@ Blog/
 
 プッシュが終わったら、GitHubから設定を変更します。
 
-GitHubのリポジトリページから setting > GitHub Pages を開きます。
+![設定変更](/201801181219/img/2.png)
+
+GitHub の setting ページにある GitHub Pages 項目へ移動します。
 None と書いてあるプルダウンメニューがあるので、そこを開いて「master branch/docs folder」を選びます。
 選択したら「Save」ボタンを押してください。
 これで準備OKです。

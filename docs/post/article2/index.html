@@ -8,7 +8,7 @@
 
 
 
-<link rel="canonical" href="http://dev-n-gine.akkey.net//post/article2/">
+<link rel="canonical" href="http://dev-n-gine.akkey.net/post/article2/">
 
 
     <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.png">
@@ -17,22 +17,22 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Compassを使える環境を整える - dev.Engine</title>
     
-<meta name="description" content="ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。 ちなみにWindo">
+<meta name="description" content="ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass">
 
 <meta property="og:title" content="Compassを使える環境を整える - dev.Engine">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://dev-n-gine.akkey.net//post/article2/">
-<meta property="og:image" content="http://dev-n-gine.akkey.net//images/default.png">
+<meta property="og:url" content="http://dev-n-gine.akkey.net/post/article2/">
+<meta property="og:image" content="http://dev-n-gine.akkey.netimages/default.png">
 <meta property="og:site_name" content="dev.Engine">
-<meta property="og:description" content="ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。 ちなみにWindo">
+<meta property="og:description" content="ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="dev.Engine">
-<meta name="twitter:url" content="http://dev-n-gine.akkey.net//post/article2/">
+<meta name="twitter:url" content="http://dev-n-gine.akkey.net/post/article2/">
 <meta name="twitter:title" content="Compassを使える環境を整える - dev.Engine">
-<meta name="twitter:description" content="ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。 ちなみにWindo">
-<meta name="twitter:image" content="http://dev-n-gine.akkey.net//images/default.png">
+<meta name="twitter:description" content="ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass">
+<meta name="twitter:image" content="http://dev-n-gine.akkey.netimages/default.png">
 
 
 <script type="application/ld+json">
@@ -41,12 +41,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"http://dev-n-gine.akkey.net//"
+      "@id":"http://dev-n-gine.akkey.net"
     },
     "headline": "Compassを使える環境を整える - dev.Engine",
     "image": {
       "@type": "ImageObject",
-      "url": "http://dev-n-gine.akkey.net//images/default.png",
+      "url": "http://dev-n-gine.akkey.netimages/default.png",
       "height": 800,
       "width": 800
     },
@@ -61,17 +61,17 @@
       "name": "dev.Engine",
       "logo": {
         "@type": "ImageObject",
-        "url": "http://dev-n-gine.akkey.net//images/logo.png",
+        "url": "http://dev-n-gine.akkey.netimages/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。 ちなみにWindo"
+    "description": "ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass"
   }
 </script>
 
 
-    <link href="http://dev-n-gine.akkey.net//css/styles.css" rel="stylesheet">
+    <link href="http://dev-n-gine.akkey.netcss/styles.css" rel="stylesheet">
     
 
   </head>
@@ -91,7 +91,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://dev-n-gine.akkey.net//">d<span>e</span>v.Engin<span>e</span></a>
+            <a class="navbar-brand" href="http://dev-n-gine.akkey.net">d<span>e</span>v.Engin<span>e</span></a>
           </div>
 
           
@@ -109,7 +109,7 @@
   <header>
     <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-17T13:01:33JST">Jan 17, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://dev-n-gine.akkey.net//post/">post</a></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://dev-n-gine.akkey.netpost/">post</a></li>
       
     </ul>
 
@@ -120,13 +120,13 @@
 
   <div class="article-body">
 
-<p>ブログを作成するとなるとCSSをいじることになるのですが、今時CSSを直に書くのは手間なのでCompassを使ってみます。<br />
-ちなみにWindows環境です。</p>
+<p>ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompassを利用してみることにしました。<br />
+今回も環境はWindowsです。</p>
 
 <h2 id="rubyをインストールする">Rubyをインストールする</h2>
 
 <p>まずは準備から。<br />
-以下のページから RubyInstaller をダウンロードしてきてインストールします。</p>
+以下のページから RubyInstaller をダウンロードし、インストールします。</p>
 
 <p><a href="https://rubyinstaller.org/">https://rubyinstaller.org/</a></p>
 
@@ -144,13 +144,18 @@
 gem install compass
 </code></pre>
 
-<p>インストールが終わればCompassを使う環境作成は完了です。<br />
-と、本来の目的は果たしたわけですが、使い方についても調べてみます。</p>
+<p>インストールが終わったら、ちゃんと入っているか確認してみます。</p>
 
-<h2 id="compass利用に必要なファイルを作成">Compass利用に必要なファイルを作成</h2>
+<pre><code>compass -v
+</code></pre>
 
-<p>Compassを利用する前にはまず初期化をするみたいですね。<br />
-Compassを利用したいディレクトリで以下のコマンドを実行することで、必要なファイルが作成されます。</p>
+<p>これでバージョンが表示されればOK、Compassを使う環境作成は完了です。<br />
+と、本来の目的は果たしたわけですが、ここから使い方についても調べてみます。</p>
+
+<h2 id="compassの新規プロジェクト作成">Compassの新規プロジェクト作成</h2>
+
+<p>Compassを利用する前にはまず新規プロジェクトを作る必要があるようですね。<br />
+Compassを利用したいディレクトリで以下のコマンドを実行することで、新規プロジェクトが作成されます。</p>
 
 <pre><code>compass create
 </code></pre>
@@ -163,14 +168,14 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 <p>実行後、以下のディレクトリが作成されていれば成功です。(ちなみに <code>--bare</code> オプション有りの場合です。)</p>
 
 <pre><code>root
-├ sass/
-└ config.rb
+├ sass/      // Sass(SCSS)ファイルが入るディレクトリ
+└ config.rb  // Compass設定ファイル
 </code></pre>
 
 <h2 id="scssをビルドする">scssをビルドする</h2>
 
-<p>では早速、試しにscssのサンプルコードをビルドしてみます。<br />
-まずは、対象のscssファイルを作成して、 <code>sass</code> ディレクトリ配下に設置します。</p>
+<p>では早速、試しにSCSSのサンプルコードをビルドしてみます。<br />
+まずは、対象のSCSSファイルを作成して、 <code>sass</code> ディレクトリ配下に設置します。</p>
 
 <p>sample.scss</p>
 
@@ -182,7 +187,7 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 
 <pre><code>root
 ├ sass/
-├ └ sample.sass
+├ └ sample.sass  // ★追加したファイル
 └ config.rb
 </code></pre>
 
@@ -199,8 +204,8 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 ├ .sass-cache/
 ├ sass/
 │  └ sample.scss
-├ stylesheet/
-│  └ sample.css
+├ stylesheet/    // ★ビルド後のCSSが入るディレクトリ
+│  └ sample.css  // ★CSSファイル
 └ config.rb
 </code></pre>
 
@@ -216,7 +221,7 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 
 <p>これでビルド完了です。</p>
 
-<h2 id="おまけ１-エラーでビルド出来ない">おまけ１: エラーでビルド出来ない</h2>
+<h2 id="エラーでビルド出来ない時">エラーでビルド出来ない時</h2>
 
 <p>最初ビルドがうまく動かない時がありました。<br />
 エラーメッセージにはこんな表示が。</p>
@@ -232,7 +237,7 @@ Compassを利用したいディレクトリで以下のコマンドを実行す�
 <p>[参考]<br />
 <a href="http://blog.a4works.co.jp/archives/326">Windows環境のcompassで”Invalid Windows-31J character”のエラー</a></p>
 
-<h2 id="おまけ２-ビルド後のcssのコメントが邪魔">おまけ２: ビルド後のcssのコメントが邪魔</h2>
+<h2 id="ビルド後のcssのコメントが邪魔な時">ビルド後のcssのコメントが邪魔な時</h2>
 
 <p>個人的にビルドされたCSSに入る↓このコメントが邪魔だったので、消す方法を探してみました。<br />
 どうやら、元々 <code>config.rb</code> に書いてある <code># line_comments = false</code> をコメント解除すれば良いみたいですね。</p>
@@ -270,25 +275,25 @@ line_comments = false
     </div>
     <div class="list-group">
       
-      <a href="http://dev-n-gine.akkey.net//post/article3/" class="list-group-item">Hugoで作ったブログをGitHub Pagesで公開する</a>
+      <a href="http://dev-n-gine.akkey.net/post/article4/" class="list-group-item">Node.js(npm)をWindowsにインストールする</a>
       
-      <a href="http://dev-n-gine.akkey.net//post/article2/" class="list-group-item">Compassを使える環境を整える</a>
+      <a href="http://dev-n-gine.akkey.net/post/article3/" class="list-group-item">Hugoで作ったブログをGitHub Pagesで公開する</a>
       
-      <a href="http://dev-n-gine.akkey.net//post/article1/" class="list-group-item">Hugoでブログを作る</a>
+      <a href="http://dev-n-gine.akkey.net/post/article2/" class="list-group-item">Compassを使える環境を整える</a>
       
-      <a href="http://dev-n-gine.akkey.net//categories/" class="list-group-item">Categories</a>
+      <a href="http://dev-n-gine.akkey.net/post/article1/" class="list-group-item">Hugoでブログを作る</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/compass/" class="list-group-item">Compass</a>
+      <a href="http://dev-n-gine.akkey.net/categories/" class="list-group-item">Categories</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/css/" class="list-group-item">Css</a>
+      <a href="http://dev-n-gine.akkey.net/tags/compass/" class="list-group-item">Compass</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/github-pages/" class="list-group-item">Github Pages</a>
+      <a href="http://dev-n-gine.akkey.net/tags/css/" class="list-group-item">Css</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/hugo/" class="list-group-item">Hugo</a>
+      <a href="http://dev-n-gine.akkey.net/tags/github-pages/" class="list-group-item">Github Pages</a>
       
-      <a href="http://dev-n-gine.akkey.net//post/" class="list-group-item">Posts</a>
+      <a href="http://dev-n-gine.akkey.net/tags/hugo/" class="list-group-item">Hugo</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/scsssass/" class="list-group-item">Scsssass</a>
+      <a href="http://dev-n-gine.akkey.net/tags/node.js/" class="list-group-item">Node.js</a>
       
     </div>
   </section>
@@ -300,7 +305,7 @@ line_comments = false
     </div>
     <div class="list-group">
       
-      <a href="http://dev-n-gine.akkey.net//categories/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89" class="list-group-item">フロントエンド</a>
+      <a href="http://dev-n-gine.akkey.netcategories/%E6%8A%80%E8%A1%93%E7%B3%BB" class="list-group-item">技術系</a>
       
     </div>
   </section>
@@ -311,15 +316,19 @@ line_comments = false
     </div>
     <div class="list-group">
       
-      <a href="http://dev-n-gine.akkey.net//tags/hugo" class="list-group-item">hugo</a>
+      <a href="http://dev-n-gine.akkey.nettags/hugo" class="list-group-item">hugo</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/compass" class="list-group-item">compass</a>
+      <a href="http://dev-n-gine.akkey.nettags/compass" class="list-group-item">compass</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/css" class="list-group-item">css</a>
+      <a href="http://dev-n-gine.akkey.nettags/css" class="list-group-item">css</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/github-pages" class="list-group-item">github-pages</a>
+      <a href="http://dev-n-gine.akkey.nettags/github-pages" class="list-group-item">github-pages</a>
       
-      <a href="http://dev-n-gine.akkey.net//tags/scsssass" class="list-group-item">scsssass</a>
+      <a href="http://dev-n-gine.akkey.nettags/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://dev-n-gine.akkey.nettags/npm" class="list-group-item">npm</a>
+      
+      <a href="http://dev-n-gine.akkey.nettags/scsssass" class="list-group-item">scsssass</a>
       
     </div>
   </section>

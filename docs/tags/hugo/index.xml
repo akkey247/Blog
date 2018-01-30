@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on dev.Engine</title>
-    <link>http://dev-n-gine.akkey.net//tags/hugo/</link>
+    <link>http://dev-n-gine.akkey.net/tags/hugo/</link>
     <description>Recent content in Hugo on dev.Engine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 18 Jan 2018 12:19:52 +0900</lastBuildDate>
     
-	<atom:link href="http://dev-n-gine.akkey.net//tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dev-n-gine.akkey.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
-      <link>http://dev-n-gine.akkey.net//post/article3/</link>
+      <link>http://dev-n-gine.akkey.net/post/article3/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>http://dev-n-gine.akkey.net//post/article3/</guid>
+      <guid>http://dev-n-gine.akkey.net/post/article3/</guid>
       <description>以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず</description>
     </item>
     
     <item>
       <title>Hugoでブログを作る</title>
-      <link>http://dev-n-gine.akkey.net//post/article1/</link>
+      <link>http://dev-n-gine.akkey.net/post/article1/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>http://dev-n-gine.akkey.net//post/article1/</guid>
+      <guid>http://dev-n-gine.akkey.net/post/article1/</guid>
       <description>はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成</description>
     </item>
     
