@@ -1,9 +1,11 @@
 ---
-title: "Node.js(npm)をWindowsにインストールする"
 date: 2018-01-30T08:37:40+09:00
+title: "Node.js(npm)をWindowsにインストールする"
+keyword: "Node.js, npm"
+description: "Node.js(npm)をWindowsにインストールする"
+categories: [ "技術系" ]
+tags: [ "Node.js", "npm" ]
 draft: false
-categories:  [ "技術系" ]
-tags:  [ "Node.js", "npm" ]
 ---
 
 最近は何をするにしても npm を使ってる気がします。

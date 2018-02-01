@@ -1,9 +1,11 @@
 ---
-title: "Hugoで作ったブログをGitHub Pagesで公開する"
 date: 2018-01-18T12:19:52+09:00
+title: "Hugoで作ったブログをGitHub Pagesで公開する"
+keyword: "Hugo, GitHub Pages"
+description: "Hugoで作ったブログをGitHub Pagesで公開する"
+categories: [ "技術系" ]
+tags: [ "GitHub Pages", "Hugo" ]
 draft: false
-categories:  [ "技術系" ]
-tags:  [ "GitHub Pages", "Hugo" ]
 ---
 
 以前書いた [Hugo でブログを作る](/post/article1/) という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。

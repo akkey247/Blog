@@ -1,9 +1,11 @@
 ---
 date: 2017-12-28T16:40:22+09:00
 title: "Hugoでブログを作る"
+keyword: "Hugo"
+description: "Hugoでブログを作る"
+categories: [ "技術系" ]
+tags: [ "Hugo" ]
 draft: false
-categories:  [ "技術系" ]
-tags:  [ "Hugo" ]
 ---
 
 はじめまして、Akkey(アッキー)と申します。
