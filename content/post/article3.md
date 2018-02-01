@@ -2,7 +2,6 @@
 date: 2018-01-18T12:19:52+09:00
 title: "Hugoで作ったブログをGitHub Pagesで公開する"
 keyword: "Hugo, GitHub Pages"
-description: "Hugoで作ったブログをGitHub Pagesで公開する"
 categories: [ "技術系" ]
 tags: [ "GitHub Pages", "Hugo" ]
 draft: false

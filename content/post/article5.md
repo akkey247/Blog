@@ -2,7 +2,6 @@
 date: 2018-01-31T08:49:36+09:00
 title: "Parcelを使ってみる"
 keyword: "Node.js, npm"
-description: "Node.js(npm)をWindowsにインストールする"
 categories: [ "技術系" ]
 tags: [ "parcel" ]
 draft: true

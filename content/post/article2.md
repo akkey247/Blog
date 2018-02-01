@@ -2,7 +2,6 @@
 date: 2018-01-17T13:01:33+09:00
 title: "Compassを使える環境を整える"
 keyword: "Compass, CSS, SCSS(SASS)"
-description: "Compassを使える環境を整える"
 categories: [ "技術系" ]
 tags: [ "CSS", "SCSS SASS", "Compass" ]
 draft: false

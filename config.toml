@@ -2,6 +2,7 @@ baseURL = "http://dev-n-gine.akkey.net/"
 languageCode = "ja"
 title = "dev.Engine"
 hasCJKLanguage = true
+googleAnalytics = "UA-87724467-2"
 [Params]
   since = 2018
   keyword = "dev.Engine"
