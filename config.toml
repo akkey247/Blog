@@ -4,5 +4,7 @@ title = "dev.Engine"
 hasCJKLanguage = true
 [Params]
   since = 2018
+  keyword = "dev.Engine"
+  description = "プログラミングで日々学んだことを綴るブログ"
 [blackfriday]
   extensions = ["hardLineBreak"]
