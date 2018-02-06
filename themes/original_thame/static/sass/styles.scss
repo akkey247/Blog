@@ -54,6 +54,17 @@ body {
     margin: 7px 15px 6px 0;
   }
 }
+@mixin other-browser-navbar-brand() {
+  .navbar-default .navbar-brand {
+    height: 48px;
+  }
+}
+@supports (-ms-ime-align:auto) {
+  @include other-browser-navbar-brand();
+}
+@-moz-document url-prefix() {
+  @include other-browser-navbar-brand();
+}
 
 /* Parts:facts */
 .p-facts {
