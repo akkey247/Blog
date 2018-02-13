@@ -55,6 +55,22 @@ body {
   }
 }
 
+.navbar-nav {
+  >li>a {
+    padding: 0;
+  }
+}
+
+.nav>li {
+  text-align: right;
+  padding: 7px 20px 0 0;
+}
+@media (min-width: 768px) {
+  .nav>li {
+    padding: 7px 0 0 20px;
+  }
+}
+
 /* Parts:facts */
 .p-facts {
   list-style: none;

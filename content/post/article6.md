@@ -17,17 +17,31 @@ HugoでHP作っといてなんですが、WordPress環境作成に挑戦しま�
 GitHubでリポジトリを作成して、ローカル環境へクローンしておきます。
 
 ## heroku にアプリを作成する
-
+次にherokuでアプリを作成します。
+新規でアプリを作成して、デプロイ元にさっき作ったリポジトリを選択しておくだけでOKです。
 
 ## heroku に PostgreSQL アドオンをインストールする
+PostgreSQLを利用するため、「Heroku Postgres」アドオンをインストールしておきます。
+https://elements.heroku.com/addons/heroku-postgresql
 
 ## WordPress最新版をダウンロードする
-いよいよWordPressをダウンロードします。
+次はWordPressをダウンロードします。
 ↓ここから最新版(4.9.2)をダウンロードしてきます。
 
 https://ja.wordpress.org/
 
-ダウンロードしたWordPressはGitリポジトリにコミットしておきます。
+ダウンロードしたら、WordPressの中身をローカルにクローンしたGitリポジトリ内にコピーしておきます。
+↓こんな感じで。
+
+```
+リポジトリ/
+├ .git
+├ wp-admin
+├ wp-content
+├ wp-includes
+ ：
+ ：
+```
 
 ## wp-config.phpを編集する
 次に wp-config.php を編集します。
@@ -35,7 +49,7 @@ https://ja.wordpress.org/
 wp-config.phpの内容は例の [wordpress-heroku](https://github.com/mhoofman/wordpress-heroku) を参考にさせていただきました。
 
 以下の2箇所を修正します。
-これでサーバーから情報を拾ってきてくれるようです。
+こうしておくとサーバーから情報を拾ってきてくれるようです。
 
 ```
 $db = parse_url($_ENV["DATABASE_URL"]);

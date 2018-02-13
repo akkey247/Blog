@@ -9,3 +9,11 @@ googleAnalytics = "UA-87724467-2"
   description = "プログラミングで日々学んだことを綴るブログ"
 [blackfriday]
   extensions = ["hardLineBreak"]
+[[menu.main]]
+  name = "./img/github.png"
+  weight = -110
+  url = "https://github.com/akkey247"
+[[menu.main]]
+  name = "./img/akkey.png"
+  weight = -100
+  url = "http://dev-n-gine.akkey.net/"

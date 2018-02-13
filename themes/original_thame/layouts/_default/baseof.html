@@ -48,7 +48,11 @@
                 </ul>
               </li>
               {{ else }}
-              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              <li>
+                <a href="{{ .URL }}">
+                  <img src="{{ .Name }}">
+                </a>
+              </li>
               {{ end }}
               {{ end }}
             </ul>
