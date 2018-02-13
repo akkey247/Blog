@@ -63,6 +63,30 @@ body {
   margin: 7px 15px 6px 0;
 }
 
+@supports (-ms-ime-align: auto) {
+  .navbar-default .navbar-brand {
+    height: 48px;
+  }
+}
+@-moz-document url-prefix() {
+  .navbar-default .navbar-brand {
+    height: 48px;
+  }
+}
+.navbar-nav > li > a {
+  padding: 0;
+}
+
+.nav > li {
+  text-align: right;
+  padding: 7px 20px 0 0;
+}
+
+@media (min-width: 768px) {
+  .nav > li {
+    padding: 7px 0 0 20px;
+  }
+}
 /* Parts:facts */
 .p-facts {
   list-style: none;
@@ -110,7 +134,7 @@ article .article-body {
 }
 article .article-body p {
   font-size: 1.7rem;
-  margin: 2.5rem 0;
+  margin: 3rem 0;
   line-height: 3.4rem;
   font-weight: 500;
 }
