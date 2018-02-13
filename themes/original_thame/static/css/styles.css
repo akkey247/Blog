@@ -63,6 +63,16 @@ body {
   margin: 7px 15px 6px 0;
 }
 
+@supports (-ms-ime-align: auto) {
+  .navbar-default .navbar-brand {
+    height: 48px;
+  }
+}
+@-moz-document url-prefix() {
+  .navbar-default .navbar-brand {
+    height: 48px;
+  }
+}
 .navbar-nav > li > a {
   padding: 0;
 }
