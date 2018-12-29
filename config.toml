@@ -10,10 +10,10 @@ googleAnalytics = "UA-87724467-2"
 [blackfriday]
   extensions = ["hardLineBreak"]
 [[menu.main]]
-  name = "./img/github.png"
+  name = "/img/github.png"
   weight = -110
   url = "https://github.com/akkey247"
 [[menu.main]]
-  name = "./img/akkey.png"
+  name = "/img/akkey.png"
   weight = -100
   url = "http://dev-n-gine.akkey.net/"
