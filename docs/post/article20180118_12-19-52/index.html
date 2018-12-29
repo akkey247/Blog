@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="keyword" content="Hugo, GitHub Pages">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.53" />
+
+
+
+<link rel="canonical" href="http://dev-n-gine.akkey.net/post/article20180118_12-19-52/">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.png">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Hugoで作ったブログをGitHub Pagesで公開する - dev.Engine</title>
+    
+<meta name="description" content="以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず">
+
+<meta property="og:title" content="Hugoで作ったブログをGitHub Pagesで公開する - dev.Engine">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://dev-n-gine.akkey.net/post/article20180118_12-19-52/">
+<meta property="og:image" content="http://dev-n-gine.akkey.net/images/default.png">
+<meta property="og:site_name" content="dev.Engine">
+<meta property="og:description" content="以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="dev.Engine">
+<meta name="twitter:url" content="http://dev-n-gine.akkey.net/post/article20180118_12-19-52/">
+<meta name="twitter:title" content="Hugoで作ったブログをGitHub Pagesで公開する - dev.Engine">
+<meta name="twitter:description" content="以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず">
+<meta name="twitter:image" content="http://dev-n-gine.akkey.net/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://dev-n-gine.akkey.net/"
+    },
+    "headline": "Hugoで作ったブログをGitHub Pagesで公開する - dev.Engine",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://dev-n-gine.akkey.net/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-01-18T12:19:52JST",
+    "dateModified": "2018-01-18T12:19:52JST",
+    "author": {
+      "@type": "Person",
+      "name": "dev.Engine"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "dev.Engine",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://dev-n-gine.akkey.net/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず"
+  }
+</script>
+
+
+    <link href="http://dev-n-gine.akkey.net/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-87724467-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"><img src=""></span>
+              <span class="icon-bar"><img src=""></span>
+              <span class="icon-bar"><img src=""></span>
+            </button>
+            <a class="navbar-brand" href="http://dev-n-gine.akkey.net/">d<span>e</span>v.Engin<span>e</span></a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li>
+                <a href="https://github.com/akkey247">
+                  <img src="/img/github.png">
+                </a>
+              </li>
+              
+              
+              
+              <li>
+                <a href="http://dev-n-gine.akkey.net/">
+                  <img src="/img/akkey.png">
+                </a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-18T12:19:52JST">Jan 18, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://dev-n-gine.akkey.net/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">Hugoで作ったブログをGitHub Pagesで公開する</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>以前書いた <a href="/post/article1/">Hugo でブログを作る</a> という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。</p>
+
+<h2 id="githubで新規リポジトリを作成する">GitHubで新規リポジトリを作成する</h2>
+
+<p>まずは、GitHubでリポジトリを作成します。<br />
+仮に <code>Blog</code> という名前のリポジトリで作成してみます。</p>
+
+<p><img src="/201801181219/img/1.png" alt="リポジトリ作成" /></p>
+
+<p>作り終わったら、ローカル環境へクローンしてきます。</p>
+
+<pre><code>git clone git@github.com:ユーザー名/Blog.git
+</code></pre>
+
+<p>クローンした空のソースの中に Hugo で作成したサイトをコピーしてきます。<br />
+後述しますが、一旦 <code>public</code> ディレクトリは一旦消しています。</p>
+
+<p>こんな構成になります。<br />
+(サブディレクトリの中身は若干端折ってます。)</p>
+
+<pre><code>Blog/
+├ archetypes/
+├ content/
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/  // 前の記事で使ったテーマ
+└ config.toml
+</code></pre>
+
+<p>一旦、コミットしておきます。</p>
+
+<h2 id="公開用ディレクトリを作成する">公開用ディレクトリを作成する</h2>
+
+<p>Hugoでビルドした際に自動で生成されるディレクトリは <code>public</code> でしたが、<br />
+GitHub Pagesでは公開ディレクトリは <code>docs</code> という名前にしなくてはいけません。<br />
+なので、ビルドする際にディレクトリ名を指定することにします。</p>
+
+<p>ディレクトリ名を指定してビルドするには、コマンドに <code>-d ディレクトリ名</code> と追加します。<br />
+早速ディレクトリ名に <code>docs</code> を指定してビルドしてみます。</p>
+
+<pre><code>hugo -t hugo_theme_beg -d docs
+</code></pre>
+
+<p><code>docs</code> という名前でディレクトリが作成されたと思います。</p>
+
+<pre><code>Blog/
+├ archetypes/
+├ content/
+├ data/
+├ docs/     // ★作成された
+├ layouts/
+├ static/
+├ themes/
+└ config.toml
+</code></pre>
+
+<h2 id="github-pagesへ反映する">GitHub Pagesへ反映する</h2>
+
+<p>まずは、作ったソースをリモートリポジトリへプッシュします。</p>
+
+<p>プッシュが終わったら、GitHubから設定を変更します。</p>
+
+<p><img src="/201801181219/img/2.png" alt="設定変更" /></p>
+
+<p>GitHub の setting ページにある GitHub Pages 項目へ移動します。<br />
+None と書いてあるプルダウンメニューがあるので、そこを開いて「master branch/docs folder」を選びます。<br />
+選択したら「Save」ボタンを押してください。<br />
+これで準備OKです。</p>
+
+<h2 id="ブログを確認する">ブログを確認する</h2>
+
+<p><code>https://ユーザー名.github.io/Blog/</code> のURLにアクセスすればページが表示されるはずです。</p>
+
+<h2 id="終わりに">終わりに</h2>
+
+<p>本当はHugoで作ったプロジェクトをローカルリポジトリとして初期化してからリモートに上げる流れがスムーズなのかもしれないですね。<br />
+こっちの方が楽そうだったので、このやり方で反映してみました。</p>
+</div>
+
+  <footer class="article-footer">
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://dev-n-gine.akkey.net/post/article20180130_08-37-40/" class="list-group-item">Node.js(npm)をWindowsにインストールする</a>
+      
+      <a href="http://dev-n-gine.akkey.net/post/article20180118_12-19-52/" class="list-group-item">Hugoで作ったブログをGitHub Pagesで公開する</a>
+      
+      <a href="http://dev-n-gine.akkey.net/post/article20180117_13-01-33/" class="list-group-item">Compassを使える環境を整える</a>
+      
+      <a href="http://dev-n-gine.akkey.net/post/article20171228_16-40-22/" class="list-group-item">Hugoでブログを作る</a>
+      
+      <a href="http://dev-n-gine.akkey.net/categories/" class="list-group-item">Categories</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/compass/" class="list-group-item">Compass</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/css/" class="list-group-item">Css</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/github-pages/" class="list-group-item">Github Pages</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/hugo/" class="list-group-item">Hugo</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/node.js/" class="list-group-item">Node.js</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://dev-n-gine.akkey.net/categories/%E6%8A%80%E8%A1%93%E7%B3%BB" class="list-group-item">技術系</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://dev-n-gine.akkey.net/tags/hugo" class="list-group-item">hugo</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/compass" class="list-group-item">compass</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/css" class="list-group-item">css</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/github-pages" class="list-group-item">github-pages</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/npm" class="list-group-item">npm</a>
+      
+      <a href="http://dev-n-gine.akkey.net/tags/scss-sass" class="list-group-item">scss-sass</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 2018 dev.Engine</span></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
