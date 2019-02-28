@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github Pages on dev.Engine</title>
-    <link>http://dev-n-gine.akkey.net/tags/github-pages/</link>
+    <link>https://dev-n-gine.akkey.net/tags/github-pages/</link>
     <description>Recent content in Github Pages on dev.Engine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 18 Jan 2018 12:19:52 +0900</lastBuildDate>
     
-	<atom:link href="http://dev-n-gine.akkey.net/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dev-n-gine.akkey.net/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
-      <link>http://dev-n-gine.akkey.net/post/article20180118_12-19-52/</link>
+      <link>https://dev-n-gine.akkey.net/post/article20180118_12-19-52/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>http://dev-n-gine.akkey.net/post/article20180118_12-19-52/</guid>
+      <guid>https://dev-n-gine.akkey.net/post/article20180118_12-19-52/</guid>
       <description>以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず</description>
     </item>
     

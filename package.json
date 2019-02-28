@@ -1,7 +1,7 @@
 {
   "name": "dev.Engine",
   "version": "1.0.0",
-  "description": "",
+  "description": "my blog site.",
   "main": "index.js",
   "directories": {
     "doc": "docs"

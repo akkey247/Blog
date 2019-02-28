@@ -1,4 +1,4 @@
-baseURL = "http://dev-n-gine.akkey.net/"
+baseURL = "https://dev-n-gine.akkey.net/"
 languageCode = "ja"
 title = "dev.Engine"
 hasCJKLanguage = true
