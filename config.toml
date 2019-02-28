@@ -16,4 +16,4 @@ googleAnalytics = "UA-87724467-2"
 [[menu.main]]
   name = "/img/akkey.png"
   weight = -100
-  url = "http://dev-n-gine.akkey.net/"
+  url = "https://dev-n-gine.akkey.net/"
