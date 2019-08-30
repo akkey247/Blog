@@ -13,10 +13,10 @@
     
     <item>
       <title>Node.js(npm)をWindowsにインストールする</title>
-      <link>https://dev-n-gine.akkey.net/post/article20180130_08-37-40/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180130/nodejs-install/</link>
       <pubDate>Tue, 30 Jan 2018 08:37:40 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/post/article20180130_08-37-40/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180130/nodejs-install/</guid>
       <description>最近は何をするにしても npm を使ってる気がします。 npm は Node.js のパッケージ管理ツールなんですが、 Node.js 使わないときでもタスクランナー(タスク自動化ツール)</description>
     </item>
     

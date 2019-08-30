@@ -13,10 +13,10 @@
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
-      <link>https://dev-n-gine.akkey.net/post/article20180118_12-19-52/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/post/article20180118_12-19-52/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</guid>
       <description>以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず</description>
     </item>
     
