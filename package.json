@@ -9,8 +9,7 @@
   "scripts": {
     "start": "hugo server -t original_thame -w -D",
     "new": "hugo new",
-    "newblog": "hugo new -- blog/article`date +%Y%m%d_%H-%M-%S`.md",
-    "newpost": "hugo new -- post/article`date +%Y%m%d_%H-%M-%S`.md",
+    "newpost": "hugo new -- article/`date +%Y%m%d`/new-article.md",
     "build": "hugo -t original_thame -d docs",
     "build-all": "hugo -t original_thame -d docs -D",
     "server-1": "hugo server -t hugo_theme_beg -w -D",
