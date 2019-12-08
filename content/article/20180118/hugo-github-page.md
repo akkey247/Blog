@@ -14,7 +14,7 @@ draft: false
 まずは、GitHubでリポジトリを作成します。
 仮に `Blog` という名前のリポジトリで作成してみます。
 
-![リポジトリ作成](/201801181219/img/1.png)
+![リポジトリ作成](/20180118/hugo-github-page/img/1.png)
 
 作り終わったら、ローカル環境へクローンしてきます。
 
@@ -75,7 +75,7 @@ Blog/
 
 プッシュが終わったら、GitHubから設定を変更します。
 
-![設定変更](/201801181219/img/2.png)
+![設定変更](/20180118/hugo-github-page/img/2.png)
 
 GitHub の setting ページにある GitHub Pages 項目へ移動します。
 None と書いてあるプルダウンメニューがあるので、そこを開いて「master branch/docs folder」を選びます。

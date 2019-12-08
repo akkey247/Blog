@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dev-n-gine.akkey.net/article/20190927/how-to-use-docker/</loc>
+    <lastmod>2019-09-27T01:00:48+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dev-n-gine.akkey.net/article/20180130/nodejs-install/</loc>
     <lastmod>2018-01-30T08:37:40+09:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https://dev-n-gine.akkey.net/article/</loc>
-    <lastmod>2018-01-30T08:37:40+09:00</lastmod>
+    <lastmod>2019-09-27T01:00:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,6 +47,12 @@
   <url>
     <loc>https://dev-n-gine.akkey.net/tags/css/</loc>
     <lastmod>2018-01-17T13:01:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dev-n-gine.akkey.net/tags/docker/</loc>
+    <lastmod>2019-09-27T01:00:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -83,13 +94,13 @@
   
   <url>
     <loc>https://dev-n-gine.akkey.net/</loc>
-    <lastmod>2018-01-30T08:37:40+09:00</lastmod>
+    <lastmod>2019-09-27T01:00:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dev-n-gine.akkey.net/categories/%E6%8A%80%E8%A1%93%E7%B3%BB/</loc>
-    <lastmod>2018-01-30T08:37:40+09:00</lastmod>
+    <lastmod>2019-09-27T01:00:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   

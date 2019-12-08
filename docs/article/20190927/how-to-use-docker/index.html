@@ -2,22 +2,76 @@
 <html>
   <head>
     <meta charset="utf-8">
-<meta name="keyword" content="dev.Engine">
+<meta name="keyword" content="Docker">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.53" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://dev-n-gine.akkey.net/tags/npm/index.xml">
 
-<link rel="canonical" href="https://dev-n-gine.akkey.net/tags/npm/">
+
+<link rel="canonical" href="https://dev-n-gine.akkey.net/article/20190927/how-to-use-docker/">
 
 
     <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.png">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Npm - dev.Engine</title>
+    <title>Dockerを使う上で最低限覚えておけば良いこと - dev.Engine</title>
     
+<meta name="description" content="今更ながらDockerを学習中です。 やっとちょっとずつ分かってきたので、ここらで覚え書きを残しておこうと思います。 超ざっくりなDockerの">
+
+<meta property="og:title" content="Dockerを使う上で最低限覚えておけば良いこと - dev.Engine">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dev-n-gine.akkey.net/article/20190927/how-to-use-docker/">
+<meta property="og:image" content="https://dev-n-gine.akkey.net/images/default.png">
+<meta property="og:site_name" content="dev.Engine">
+<meta property="og:description" content="今更ながらDockerを学習中です。 やっとちょっとずつ分かってきたので、ここらで覚え書きを残しておこうと思います。 超ざっくりなDockerの">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="dev.Engine">
+<meta name="twitter:url" content="https://dev-n-gine.akkey.net/article/20190927/how-to-use-docker/">
+<meta name="twitter:title" content="Dockerを使う上で最低限覚えておけば良いこと - dev.Engine">
+<meta name="twitter:description" content="今更ながらDockerを学習中です。 やっとちょっとずつ分かってきたので、ここらで覚え書きを残しておこうと思います。 超ざっくりなDockerの">
+<meta name="twitter:image" content="https://dev-n-gine.akkey.net/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://dev-n-gine.akkey.net/"
+    },
+    "headline": "Dockerを使う上で最低限覚えておけば良いこと - dev.Engine",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://dev-n-gine.akkey.net/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-09-27T01:00:48JST",
+    "dateModified": "2019-09-27T01:00:48JST",
+    "author": {
+      "@type": "Person",
+      "name": "dev.Engine"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "dev.Engine",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dev-n-gine.akkey.net/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "今更ながらDockerを学習中です。 やっとちょっとずつ分かってきたので、ここらで覚え書きを残しておこうと思います。 超ざっくりなDockerの"
+  }
+</script>
+
+
     <link href="https://dev-n-gine.akkey.net/css/styles.css" rel="stylesheet">
     
 
@@ -89,42 +143,71 @@ if (!doNotTrack) {
         
 <div class="row">
   <div class="col-md-8">
-
-    
-    <header class="page-header">
-      <h1>Npm</h1>
-    </header>
-    
-
-    <ul class="p-articles">
-      
-      <li><article class="li">
+    <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-30T08:37:40JST">Jan 30, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-09-27T01:00:48JST">Sep 27, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://dev-n-gine.akkey.net/article/">article</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://dev-n-gine.akkey.net/article/20180130/nodejs-install/">Node.js(npm)をWindowsにインストールする</a></h2>
+
+    <h1 class="title">Dockerを使う上で最低限覚えておけば良いこと</h1>
   </header>
 
   
-  <div class="summary">最近は何をするにしても npm を使ってる気がします。 npm は Node.js のパッケージ管理ツールなんですが、 Node.js 使わないときでもタスクランナー(タスク自動化ツール)</div>
 
-  
-  <footer>
-    <a href="https://dev-n-gine.akkey.net/article/20180130/nodejs-install/" title="Node.js(npm)をWindowsにインストールする">Read More…</a>
+  <div class="article-body">
+
+<p>今更ながらDockerを学習中です。<br />
+やっとちょっとずつ分かってきたので、ここらで覚え書きを残しておこうと思います。</p>
+
+<h1 id="超ざっくりなdockerの仕組み">超ざっくりなDockerの仕組み</h1>
+
+<p><img src="/20190927/how-to-use-docker/img/1.png" alt="Dockerの仕組み" /></p>
+
+<h1 id="dockerコマンドとdocker-composeコマンド">dockerコマンドとdocker-composeコマンド</h1>
+
+<p>Dockerのコマンドには大きく分けると <code>docker</code> と <code>docker-compose</code> があります。</p>
+
+<p><code>docker</code> が基本のコマンドで、単一のコンテナを使用する分にはこちらで十分使えます。</p>
+
+<p><code>docker-compose</code> は、複数のコンテナを使用する場合にこちらのコマンドを使うことで、より簡単に扱うことができます。<br />
+コンテナの設定は <code>docker-compose.yml</code> というファイルに記載していきます。</p>
+
+<p>今回は、 <code>docker</code> コマンドの説明です。</p>
+
+<h1 id="超シンプルなdocker起動">超シンプルなDocker起動</h1>
+
+<p>[コマンド]</p>
+
+<pre><code>docker run centos /bin/echo Hello world
+</code></pre>
+
+<p>[出力結果]</p>
+
+<pre><code>Hello ｗorld
+</code></pre>
+
+<p>説明すると、 <code>docker run centos</code> までの部分が、CentOSのDockerイメージからコンテナを起動することを表しています。<br />
+そして、 <code>/bin/echo Hello world</code> の部分は、コンテナの起動後に実行されるコマンドを表しています。<br />
+つまり、CentOSのコンテナを起動して、「Hello world」と表示するだけのコマンドです。なので、コンテナも「Hello world」と出力した後は、すぐに停止します。</p>
+
+<p>TODO:<br />
+２つのタイトルでそれぞれ記事を書く<br />
+「Dockerを使う上で最低限覚えておけば良いこと」<br />
+「Dockerをシンプルに始めてみる」</p>
+</div>
+
+  <footer class="article-footer">
+    
   </footer>
-  
+
 </article>
-</li>
-      
-    </ul>
+
 
     
-
-
   </div>
+
   <div class="col-md-4">
     
 <aside class="l-sidebar">
