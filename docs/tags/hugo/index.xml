@@ -2,14 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on dev.Engine</title>
-    <link>https://dev-n-gine.akkey.net/tags/hugo/</link>
+    <link>https://dev-n-gine.akkey.net/tags/hugo/index.xml</link>
     <description>Recent content in Hugo on dev.Engine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Jan 2018 12:19:52 +0900</lastBuildDate>
-    
-	<atom:link href="https://dev-n-gine.akkey.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://dev-n-gine.akkey.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
@@ -17,7 +14,88 @@
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
       <guid>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</guid>
-      <description>以前書いた Hugo でブログを作る という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。 GitHubで新規リポジトリを作成する まず</description>
+      <description>
+
+&lt;p&gt;以前書いた &lt;a href=&#34;https://dev-n-gine.akkey.net/post/article1/&#34;&gt;Hugo でブログを作る&lt;/a&gt; という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。&lt;/p&gt;
+
+&lt;h2 id=&#34;githubで新規リポジトリを作成する&#34;&gt;GitHubで新規リポジトリを作成する&lt;/h2&gt;
+
+&lt;p&gt;まずは、GitHubでリポジトリを作成します。&lt;br /&gt;
+仮に &lt;code&gt;Blog&lt;/code&gt; という名前のリポジトリで作成してみます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dev-n-gine.akkey.net/20180118/hugo-github-page/img/1.png&#34; alt=&#34;リポジトリ作成&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作り終わったら、ローカル環境へクローンしてきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:ユーザー名/Blog.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;クローンした空のソースの中に Hugo で作成したサイトをコピーしてきます。&lt;br /&gt;
+後述しますが、一旦 &lt;code&gt;public&lt;/code&gt; ディレクトリは一旦消しています。&lt;/p&gt;
+
+&lt;p&gt;こんな構成になります。&lt;br /&gt;
+(サブディレクトリの中身は若干端折ってます。)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Blog/
+├ archetypes/
+├ content/
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/  // 前の記事で使ったテーマ
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一旦、コミットしておきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;公開用ディレクトリを作成する&#34;&gt;公開用ディレクトリを作成する&lt;/h2&gt;
+
+&lt;p&gt;Hugoでビルドした際に自動で生成されるディレクトリは &lt;code&gt;public&lt;/code&gt; でしたが、&lt;br /&gt;
+GitHub Pagesでは公開ディレクトリは &lt;code&gt;docs&lt;/code&gt; という名前にしなくてはいけません。&lt;br /&gt;
+なので、ビルドする際にディレクトリ名を指定することにします。&lt;/p&gt;
+
+&lt;p&gt;ディレクトリ名を指定してビルドするには、コマンドに &lt;code&gt;-d ディレクトリ名&lt;/code&gt; と追加します。&lt;br /&gt;
+早速ディレクトリ名に &lt;code&gt;docs&lt;/code&gt; を指定してビルドしてみます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo -t hugo_theme_beg -d docs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;docs&lt;/code&gt; という名前でディレクトリが作成されたと思います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Blog/
+├ archetypes/
+├ content/
+├ data/
+├ docs/     // ★作成された
+├ layouts/
+├ static/
+├ themes/
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;github-pagesへ反映する&#34;&gt;GitHub Pagesへ反映する&lt;/h2&gt;
+
+&lt;p&gt;まずは、作ったソースをリモートリポジトリへプッシュします。&lt;/p&gt;
+
+&lt;p&gt;プッシュが終わったら、GitHubから設定を変更します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dev-n-gine.akkey.net/20180118/hugo-github-page/img/2.png&#34; alt=&#34;設定変更&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;GitHub の setting ページにある GitHub Pages 項目へ移動します。&lt;br /&gt;
+None と書いてあるプルダウンメニューがあるので、そこを開いて「master branch/docs folder」を選びます。&lt;br /&gt;
+選択したら「Save」ボタンを押してください。&lt;br /&gt;
+これで準備OKです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ブログを確認する&#34;&gt;ブログを確認する&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;https://ユーザー名.github.io/Blog/&lt;/code&gt; のURLにアクセスすればページが表示されるはずです。&lt;/p&gt;
+
+&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;
+
+&lt;p&gt;本当はHugoで作ったプロジェクトをローカルリポジトリとして初期化してからリモートに上げる流れがスムーズなのかもしれないですね。&lt;br /&gt;
+こっちの方が楽そうだったので、このやり方で反映してみました。&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,7 +104,191 @@
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
       <guid>https://dev-n-gine.akkey.net/article/20171228/hugo-new-blog/</guid>
-      <description>はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成</description>
+      <description>
+
+&lt;p&gt;はじめまして、Akkey(アッキー)と申します。&lt;br /&gt;
+今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成までの手順をまとめてみました。&lt;br /&gt;
+ちなみに環境はWindowsです。&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-をダウンロードする&#34;&gt;Hugo をダウンロードする&lt;/h2&gt;
+
+&lt;p&gt;以下のページからHugoをダウンロードします。&lt;br /&gt;
+自分の環境にあったものをダウンロードしてきてください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ダウンロードした圧縮ファイルを展開すると中に &lt;code&gt;Hugo.exe&lt;/code&gt; という実行ファイルがあるので、任意のディレクトリに保存します。&lt;br /&gt;
+例えば↓のような感じ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C:\Hugo\Hugo.exe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存したHugo.exeにはパスを通しておきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;新規プロジェクトを作成する&#34;&gt;新規プロジェクトを作成する&lt;/h2&gt;
+
+&lt;p&gt;まずは、以下のコマンドを実行。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new site new_site
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;new_site&lt;/code&gt; の部分には任意の名前を入力してください。&lt;br /&gt;
+コマンドを実行すると、新規プロジェクトが作成されます。&lt;br /&gt;
+ファイル構成は以下の様な感じになると思います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new_site/
+├ archetypes/
+├ └ default.md  // 記事の雛形
+├ content/    // 記事など
+├ data/       // 不明
+├ layouts/    // レイアウト(?)
+├ static/     // 静的ファイル
+├ themes/     // テーマ
+└ config.toml // 設定ファイル
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とりあえず、作成されたプロジェクトのディレクトリに移動しておきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd new_site
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一応この状態でも動くので、確認してみます。&lt;br /&gt;
+以下のコマンドを実行すると、サーバーが立ち上がりプレビューを確認することができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;コマンド実行後、 &lt;code&gt;localhost:1313&lt;/code&gt; にアクセスすると真っ白なサイトが表示されます。&lt;br /&gt;
+まだ、何も触っていないので真っ白です。&lt;/p&gt;
+
+&lt;h2 id=&#34;テーマをダウンロードして適用する&#34;&gt;テーマをダウンロードして適用する&lt;/h2&gt;
+
+&lt;p&gt;テーマを適用してみます。&lt;br /&gt;
+以下のサイトから好きなテーマをダウンロードしてきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ダウンロードしたテーマは &lt;code&gt;themes&lt;/code&gt; ディレクトリの中に入れておいてください。&lt;br /&gt;
+今回は &lt;code&gt;hugo_theme_beg&lt;/code&gt; というテーマを使わせていただきました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/dim0627/hugo_theme_beg&#34;&gt;https://github.com/dim0627/hugo_theme_beg&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/  // ★ダウンロードしたテーマ
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テーマを適用してプレビューするには、以下のコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server -t hugo_theme_beg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;まだ、この状態では記事を投稿していないので、記事は表示されません。&lt;/p&gt;
+
+&lt;h2 id=&#34;記事を投稿する&#34;&gt;記事を投稿する&lt;/h2&gt;
+
+&lt;p&gt;以下のようなコマンドを実行することで記事が投稿できます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new post/newpage.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;newpage.md&lt;/code&gt; の部分は任意の名前を入力してください。&lt;br /&gt;
+実行すると &lt;code&gt;content/post&lt;/code&gt; ディレクトリの配下に &lt;code&gt;newpage.md&lt;/code&gt; が作成されます。&lt;br /&gt;
+↓のような状態になっていると思います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ └ post/
+├   └ newpage.md  // ★作成した記事
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;しかし、このままではプレビューしても記事が表示されないので、プレビューの前に少しページの設定を変更します。&lt;br /&gt;
+まず、 &lt;code&gt;newpage.md&lt;/code&gt; を開き &lt;code&gt;draft: true&lt;/code&gt; を &lt;code&gt;draft: false&lt;/code&gt; に変更します。これによって下書き状態が解除されます。&lt;br /&gt;
+(補足すると &lt;code&gt;---&lt;/code&gt; で括られた部分は記事の設定を書く場所です。)&lt;br /&gt;
+また、記事の中身が無いので、適当な内容も書いておきます。&lt;br /&gt;
+とりあえず、おなじみの「Hello World!!」と書いておきました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Newpage&amp;quot;
+date: 2018-01-01T00:00:00+09:00
+draft: false
+---
+
+Hello World!!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;修正を保存して、プレビューしてみると記事が作成されていることが分かります。&lt;/p&gt;
+
+&lt;h2 id=&#34;記事の更新をリアルタイムに反映する&#34;&gt;記事の更新をリアルタイムに反映する&lt;/h2&gt;
+
+&lt;p&gt;プレビューしている状態で記事の更新がリアルタイムに反映したい時は &lt;code&gt;-watch&lt;/code&gt; オプションを付けます。&lt;br /&gt;
+このオプションを付けることによって、記事の更新がリアルタイムに反映されるようになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server -t hugo_theme_beg -watch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と言いたかったのですが、付けなくても反映されるらしいですね。&lt;br /&gt;
+ちなみに短縮形で &lt;code&gt;-w&lt;/code&gt; と書いても良いようです。&lt;/p&gt;
+
+&lt;h2 id=&#34;サイトをビルドする&#34;&gt;サイトをビルドする&lt;/h2&gt;
+
+&lt;p&gt;実際にサイトをサーバーで稼働させるためにはビルドを行うことになります。&lt;br /&gt;
+ビルドするには、以下のコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo -t hugo_theme_beg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実行すると、 &lt;code&gt;public&lt;/code&gt; というディレクトリが作成されて、その中にビルドされたサイトが作成されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ └ post/
+├   └ newpage.md
+├ data/
+├ public/       // ★ビルドされたサイト
+├ ├ categories  // カテゴリページ
+├ ├ css         // CSSファイル
+├ ├ page        // 記事一覧ページ
+├ ├ post        // 記事
+├ ├ tags        // タグページ
+├ ├ 404.html    // 404エラーページ
+├ ├ index.html  // トップページ
+├ ├ index.xml   // 不明
+├ └ sitemap.xml // サイトマップ
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;この &lt;code&gt;public&lt;/code&gt; ディレクトリの配下が実際のサイトになります。&lt;br /&gt;
+&lt;code&gt;public&lt;/code&gt; ディレクトリの中身をサーバーに置いて、アクセスするとプレビュー時と同じように表示されるはずです。&lt;/p&gt;
+
+&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;
+
+&lt;p&gt;実際には、Github Pages を利用してサイト公開までやっているのですが、内容がごちゃごちゃするかなと思い、ここまでの内容に留めました。&lt;br /&gt;
+Github に上げて公開する手順もまた記事にしたいですね。&lt;br /&gt;
+コマンドのオプションや設定ファイルの書き方についても、また書いていこうと思います。&lt;br /&gt;
+それでは！&lt;/p&gt;
+</description>
     </item>
     
   </channel>
