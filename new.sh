@@ -25,7 +25,7 @@ main () {
   [ $# -ne 1 ] && usage && exit 1
 
   slug="$1"
-  file_name="post/$(date +"%Y%m%d%H%M%S")-${slug}.md"
+  file_name="article/$(date +"%Y%m%d")/${slug}.md"
   file_path="content/$file_name"
   if [ ! -e "$file_path" ]; then
     hugo new "$file_name"
@@ -35,7 +35,7 @@ main () {
     echo "$file_name already exists."
   fi
 
-  [ $OPEN_EDITOR -eq 1 ] && atom "$file_path"
+  [ $OPEN_EDITOR -eq 1 ] && code "$file_path"
 
 }
 main "$@"
