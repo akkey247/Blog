@@ -497,5 +497,325 @@ Github に上げて公開する手順もまた記事にしたいですね。&lt;
 </description>
     </item>
     
+    <item>
+      <title>マークダウンサンプル</title>
+      <link>https://dev-n-gine.akkey.net/article/markdown/</link>
+      <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
+      
+      <guid>https://dev-n-gine.akkey.net/article/markdown/</guid>
+      <description>
+
+&lt;h1 id=&#34;block-elements&#34;&gt;Block Elements&lt;/h1&gt;
+
+&lt;h2 id=&#34;headers-見出し&#34;&gt;Headers 見出し&lt;/h2&gt;
+
+&lt;p&gt;先頭に&lt;code&gt;#&lt;/code&gt;をレベルの数だけ記述します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 見出し1
+## 見出し2
+### 見出し3
+#### 見出し4
+##### 見出し5
+###### 見出し6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;見出し-1&#34;&gt;見出し 1&lt;/h1&gt;
+
+&lt;h2 id=&#34;見出し-2&#34;&gt;見出し 2&lt;/h2&gt;
+
+&lt;h3 id=&#34;見出し-3&#34;&gt;見出し 3&lt;/h3&gt;
+
+&lt;h4 id=&#34;見出し-4&#34;&gt;見出し 4&lt;/h4&gt;
+
+&lt;h5 id=&#34;見出し-5&#34;&gt;見出し 5&lt;/h5&gt;
+
+&lt;h6 id=&#34;見出し-6&#34;&gt;見出し 6&lt;/h6&gt;
+
+&lt;h2 id=&#34;block-段落&#34;&gt;Block 段落&lt;/h2&gt;
+
+&lt;p&gt;空白行を挟むことで段落となります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;段落1
+(空行)
+段落2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;段落 1&lt;/p&gt;
+
+&lt;p&gt;段落 2&lt;/p&gt;
+
+&lt;h2 id=&#34;br-改行&#34;&gt;Br 改行&lt;/h2&gt;
+
+&lt;p&gt;改行の前に半角スペース``を 2 つ記述します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hoge
+fuga(スペース2つ)
+piyo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;hoge&lt;br /&gt;
+fuga&lt;br /&gt;
+piyo&lt;/p&gt;
+
+&lt;h2 id=&#34;blockquotes-引用&#34;&gt;Blockquotes 引用&lt;/h2&gt;
+
+&lt;p&gt;先頭に&lt;code&gt;&amp;gt;&lt;/code&gt;を記述します。ネストは&lt;code&gt;&amp;gt;&lt;/code&gt;を多重に記述します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; 引用
+&amp;gt; 引用
+&amp;gt;&amp;gt; 多重引用
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;引用&lt;br /&gt;
+引用&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;多重引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;code-コード&#34;&gt;Code コード&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;`バッククオート`&lt;/code&gt; 3 つ、あるいはダッシュ&lt;code&gt;~&lt;/code&gt;３つで囲みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;print &#39;hoge&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;print &#39;hoge&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;インラインコード&#34;&gt;インラインコード&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;`バッククオート`&lt;/code&gt; で単語を囲むとインラインコードになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;これは `インラインコード`です。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これは &lt;code&gt;インラインコード&lt;/code&gt;です。&lt;/p&gt;
+
+&lt;h2 id=&#34;pre-整形済みテキスト&#34;&gt;pre 整形済みテキスト&lt;/h2&gt;
+
+&lt;p&gt;半角スペース 4 個もしくはタブで、コードブロックを pre 表示できます&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    class Hoge
+        def hoge
+            print &#39;hoge&#39;
+        end
+    end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;class Hoge
+    def hoge
+        print &#39;hoge&#39;
+    end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;hr-水平線&#34;&gt;Hr 水平線&lt;/h2&gt;
+
+&lt;p&gt;アンダースコア&lt;code&gt;_&lt;/code&gt; 、アスタリスク&lt;code&gt;*&lt;/code&gt;、ハイフン&lt;code&gt;-&lt;/code&gt;などを 3 つ以上連続して記述します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hoge
+***
+hoge
+___
+hoge
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;hoge&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;hoge&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;hoge&#34;&gt;hoge&lt;/h2&gt;
+
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+
+&lt;h2 id=&#34;ul-箇条書きリスト&#34;&gt;Ul 箇条書きリスト&lt;/h2&gt;
+
+&lt;p&gt;ハイフン&lt;code&gt;-&lt;/code&gt;、プラス&lt;code&gt;+&lt;/code&gt;、アスタリスク&lt;code&gt;*&lt;/code&gt;のいずれかを先頭に記述します。&lt;br /&gt;
+ネストはタブで表現します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- リスト1
+    - リスト1_1
+        - リスト1_1_1
+        - リスト1_1_2
+    - リスト1_2
+- リスト2
+- リスト3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト 1&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト 1_1&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;リスト 1_1_1&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;リスト 1_1_2&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;リスト 1_2&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;リスト 2&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;リスト 3&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ol-番号付きリスト&#34;&gt;Ol 番号付きリスト&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;番号.&lt;/code&gt;を先頭に記述します。ネストはタブで表現します。&lt;br /&gt;
+番号は自動的に採番されるため、すべての行を 1.と記述するのがお勧めです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. 番号付きリスト1
+    1. 番号付きリスト1-1
+    1. 番号付きリスト1-2
+1. 番号付きリスト2
+1. 番号付きリスト3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;番号付きリスト 1&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;番号付きリスト 1-1&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;番号付きリスト 1-2&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;番号付きリスト 2&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;番号付きリスト 3&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;span-elements&#34;&gt;Span Elements&lt;/h1&gt;
+
+&lt;h2 id=&#34;link-リンク&#34;&gt;Link リンク&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;[表示文字](URL)&lt;/code&gt;でリンクに変換されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Google](https://www.google.co.jp/)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.google.co.jp/&#34;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;外部参照リンク&#34;&gt;外部参照リンク&lt;/h3&gt;
+
+&lt;p&gt;URL が長くて読みづらくなる場合や同じリンクを何度も使用する場合は、リンク先への参照を定義できます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Googleを見る][Google]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.yahoo.co.jp&#34;&gt;Google を見る&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;強調&#34;&gt;強調&lt;/h2&gt;
+
+&lt;h3 id=&#34;em&#34;&gt;em&lt;/h3&gt;
+
+&lt;p&gt;アスタリスク&lt;code&gt;*&lt;/code&gt;もしくはアンダースコア&lt;code&gt;_&lt;/code&gt;1 個で文字列を囲みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;これは *イタリック* です
+これは _イタリック_ です
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これは &lt;em&gt;イタリック&lt;/em&gt; です&lt;br /&gt;
+これは &lt;em&gt;イタリック&lt;/em&gt; です&lt;/p&gt;
+
+&lt;h3 id=&#34;strong&#34;&gt;strong&lt;/h3&gt;
+
+&lt;p&gt;アスタリスク&lt;code&gt;*&lt;/code&gt;もしくはアンダースコア&lt;code&gt;_&lt;/code&gt;2 個で文字列を囲みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;これは **ボールド** です
+これは __ボールド__ です
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これは &lt;strong&gt;ボールド&lt;/strong&gt; です&lt;br /&gt;
+これは &lt;strong&gt;ボールド&lt;/strong&gt; です&lt;/p&gt;
+
+&lt;h3 id=&#34;em-strong&#34;&gt;em + strong&lt;/h3&gt;
+
+&lt;p&gt;アスタリスク&lt;code&gt;*&lt;/code&gt;もしくはアンダースコア&lt;code&gt;_&lt;/code&gt;3 個で文字列を囲みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;これは ***イタリック＆ボールド*** です
+これは ___イタリック＆ボールド___ です
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これは &lt;strong&gt;&lt;em&gt;イタリック＆ボールド&lt;/em&gt;&lt;/strong&gt; です&lt;br /&gt;
+これは &lt;strong&gt;&lt;em&gt;イタリック＆ボールド&lt;/em&gt;&lt;/strong&gt; です&lt;/p&gt;
+
+&lt;h2 id=&#34;images-画像&#34;&gt;Images 画像&lt;/h2&gt;
+
+&lt;p&gt;先頭の&lt;code&gt;!&lt;/code&gt;で画像の&lt;img&gt;と認識されます。画像の大きさなどの指定をする場合は img タグを使用します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![alt](画像URL)
+![代替文字列](URL &amp;quot;タイトル&amp;quot;)
+
+&amp;lt;img src=&amp;quot;attach:cat.jpg&amp;quot; alt=&amp;quot;attach:cat&amp;quot; title=&amp;quot;attach:cat&amp;quot; width=&amp;quot;200&amp;quot; height=&amp;quot;200&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;table-表&#34;&gt;Table 表&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;-&lt;/code&gt;と&lt;code&gt;|&lt;/code&gt;を使って table を作成します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| TH1 | TH2 |
+|----|----|
+| TD1 | TD3 |
+| TD2 | TD4 |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;TH1&lt;/th&gt;
+&lt;th&gt;TH2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;TD1&lt;/td&gt;
+&lt;td&gt;TD3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;TD2&lt;/td&gt;
+&lt;td&gt;TD4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;pre&gt;&lt;code&gt;| 左揃え | 中央揃え | 右揃え |
+|:---|:---:|---:|
+|1 |2 |3 |
+|4 |5 |6 |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;左揃え&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;中央揃え&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;右揃え&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
