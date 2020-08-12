@@ -10,10 +10,10 @@
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
-      <link>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/</guid>
       <description>
 
 &lt;p&gt;以前書いた &lt;a href=&#34;https://dev-n-gine.akkey.net/post/article1/&#34;&gt;Hugo でブログを作る&lt;/a&gt; という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。&lt;/p&gt;
@@ -100,10 +100,10 @@ None と書いてあるプルダウンメニューがあるので、そこを開
     
     <item>
       <title>Hugoでブログを作る</title>
-      <link>https://dev-n-gine.akkey.net/article/20171228/hugo-new-blog/</link>
+      <link>https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20171228/hugo-new-blog/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/</guid>
       <description>
 
 &lt;p&gt;はじめまして、Akkey(アッキー)と申します。&lt;br /&gt;

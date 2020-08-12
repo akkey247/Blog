@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="keyword" content="Hugo">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+
+<link rel="canonical" href="https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.png">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Hugoでブログを作る - dev.Engine</title>
+    
+<meta name="description" content="はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成">
+
+<meta property="og:title" content="Hugoでブログを作る - dev.Engine">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/">
+<meta property="og:image" content="https://dev-n-gine.akkey.net/images/default.png">
+<meta property="og:site_name" content="dev.Engine">
+<meta property="og:description" content="はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="dev.Engine">
+<meta name="twitter:url" content="https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/">
+<meta name="twitter:title" content="Hugoでブログを作る - dev.Engine">
+<meta name="twitter:description" content="はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成">
+<meta name="twitter:image" content="https://dev-n-gine.akkey.net/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https:\/\/dev-n-gine.akkey.net\/"
+    },
+    "headline": "Hugoでブログを作る - dev.Engine",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:\/\/dev-n-gine.akkey.net\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-12-28T16:40:22JST",
+    "dateModified": "2017-12-28T16:40:22JST",
+    "author": {
+      "@type": "Person",
+      "name": "dev.Engine"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "dev.Engine",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/dev-n-gine.akkey.net\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "はじめまして、Akkey(アッキー)と申します。 今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成"
+  }
+</script>
+
+
+    <link href="https://dev-n-gine.akkey.net/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-87724467-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"><img src=""></span>
+              <span class="icon-bar"><img src=""></span>
+              <span class="icon-bar"><img src=""></span>
+            </button>
+            <a class="navbar-brand" href="https://dev-n-gine.akkey.net/">d<span>e</span>v.Engin<span>e</span></a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li>
+                <a href="https://github.com/akkey247">
+                  <img src="/img/github.png">
+                </a>
+              </li>
+              
+              
+              
+              <li>
+                <a href="https://dev-n-gine.akkey.net/">
+                  <img src="/img/akkey.png">
+                </a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-12-28T16:40:22JST">Dec 28, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://dev-n-gine.akkey.net/article/">article</a></li>
+      
+    </ul>
+
+    <h1 class="title">Hugoでブログを作る</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>はじめまして、Akkey(アッキー)と申します。<br />
+今回、ブログを作成するにあたってHugoという静的サイト生成ツールを利用したので、ブログ作成までの手順をまとめてみました。<br />
+ちなみに環境はWindowsです。</p>
+
+<h2 id="hugo-をダウンロードする">Hugo をダウンロードする</h2>
+
+<p>以下のページからHugoをダウンロードします。<br />
+自分の環境にあったものをダウンロードしてきてください。</p>
+
+<p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
+
+<p>そして、ダウンロードした圧縮ファイルを展開すると中に <code>Hugo.exe</code> という実行ファイルがあるので、任意のディレクトリに保存します。<br />
+例えば↓のような感じ。</p>
+
+<pre><code>C:\Hugo\Hugo.exe
+</code></pre>
+
+<p>保存したHugo.exeにはパスを通しておきます。</p>
+
+<h2 id="新規プロジェクトを作成する">新規プロジェクトを作成する</h2>
+
+<p>まずは、以下のコマンドを実行。</p>
+
+<pre><code>hugo new site new_site
+</code></pre>
+
+<p><code>new_site</code> の部分には任意の名前を入力してください。<br />
+コマンドを実行すると、新規プロジェクトが作成されます。<br />
+ファイル構成は以下の様な感じになると思います。</p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md  // 記事の雛形
+├ content/    // 記事など
+├ data/       // 不明
+├ layouts/    // レイアウト(?)
+├ static/     // 静的ファイル
+├ themes/     // テーマ
+└ config.toml // 設定ファイル
+</code></pre>
+
+<p>とりあえず、作成されたプロジェクトのディレクトリに移動しておきます。</p>
+
+<pre><code>cd new_site
+</code></pre>
+
+<p>一応この状態でも動くので、確認してみます。<br />
+以下のコマンドを実行すると、サーバーが立ち上がりプレビューを確認することができます。</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>コマンド実行後、 <code>localhost:1313</code> にアクセスすると真っ白なサイトが表示されます。<br />
+まだ、何も触っていないので真っ白です。</p>
+
+<h2 id="テーマをダウンロードして適用する">テーマをダウンロードして適用する</h2>
+
+<p>テーマを適用してみます。<br />
+以下のサイトから好きなテーマをダウンロードしてきます。</p>
+
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+
+<p>ダウンロードしたテーマは <code>themes</code> ディレクトリの中に入れておいてください。<br />
+今回は <code>hugo_theme_beg</code> というテーマを使わせていただきました。</p>
+
+<p><a href="https://github.com/dim0627/hugo_theme_beg">https://github.com/dim0627/hugo_theme_beg</a></p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/  // ★ダウンロードしたテーマ
+└ config.toml
+</code></pre>
+
+<p>テーマを適用してプレビューするには、以下のコマンドを実行します。</p>
+
+<pre><code>hugo server -t hugo_theme_beg
+</code></pre>
+
+<p>まだ、この状態では記事を投稿していないので、記事は表示されません。</p>
+
+<h2 id="記事を投稿する">記事を投稿する</h2>
+
+<p>以下のようなコマンドを実行することで記事が投稿できます。</p>
+
+<pre><code>hugo new post/newpage.md
+</code></pre>
+
+<p><code>newpage.md</code> の部分は任意の名前を入力してください。<br />
+実行すると <code>content/post</code> ディレクトリの配下に <code>newpage.md</code> が作成されます。<br />
+↓のような状態になっていると思います。</p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ └ post/
+├   └ newpage.md  // ★作成した記事
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/
+└ config.toml
+</code></pre>
+
+<p>しかし、このままではプレビューしても記事が表示されないので、プレビューの前に少しページの設定を変更します。<br />
+まず、 <code>newpage.md</code> を開き <code>draft: true</code> を <code>draft: false</code> に変更します。これによって下書き状態が解除されます。<br />
+(補足すると <code>---</code> で括られた部分は記事の設定を書く場所です。)<br />
+また、記事の中身が無いので、適当な内容も書いておきます。<br />
+とりあえず、おなじみの「Hello World!!」と書いておきました。</p>
+
+<pre><code>---
+title: &quot;Newpage&quot;
+date: 2018-01-01T00:00:00+09:00
+draft: false
+---
+
+Hello World!!
+</code></pre>
+
+<p>修正を保存して、プレビューしてみると記事が作成されていることが分かります。</p>
+
+<h2 id="記事の更新をリアルタイムに反映する">記事の更新をリアルタイムに反映する</h2>
+
+<p>プレビューしている状態で記事の更新がリアルタイムに反映したい時は <code>-watch</code> オプションを付けます。<br />
+このオプションを付けることによって、記事の更新がリアルタイムに反映されるようになります。</p>
+
+<pre><code>hugo server -t hugo_theme_beg -watch
+</code></pre>
+
+<p>と言いたかったのですが、付けなくても反映されるらしいですね。<br />
+ちなみに短縮形で <code>-w</code> と書いても良いようです。</p>
+
+<h2 id="サイトをビルドする">サイトをビルドする</h2>
+
+<p>実際にサイトをサーバーで稼働させるためにはビルドを行うことになります。<br />
+ビルドするには、以下のコマンドを実行します。</p>
+
+<pre><code>hugo -t hugo_theme_beg
+</code></pre>
+
+<p>実行すると、 <code>public</code> というディレクトリが作成されて、その中にビルドされたサイトが作成されます。</p>
+
+<pre><code>new_site/
+├ archetypes/
+├ └ default.md
+├ content/
+├ └ post/
+├   └ newpage.md
+├ data/
+├ public/       // ★ビルドされたサイト
+├ ├ categories  // カテゴリページ
+├ ├ css         // CSSファイル
+├ ├ page        // 記事一覧ページ
+├ ├ post        // 記事
+├ ├ tags        // タグページ
+├ ├ 404.html    // 404エラーページ
+├ ├ index.html  // トップページ
+├ ├ index.xml   // 不明
+├ └ sitemap.xml // サイトマップ
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/
+└ config.toml
+</code></pre>
+
+<p>この <code>public</code> ディレクトリの配下が実際のサイトになります。<br />
+<code>public</code> ディレクトリの中身をサーバーに置いて、アクセスするとプレビュー時と同じように表示されるはずです。</p>
+
+<h2 id="終わりに">終わりに</h2>
+
+<p>実際には、Github Pages を利用してサイト公開までやっているのですが、内容がごちゃごちゃするかなと思い、ここまでの内容に留めました。<br />
+Github に上げて公開する手順もまた記事にしたいですね。<br />
+コマンドのオプションや設定ファイルの書き方についても、また書いていこうと思います。<br />
+それでは！</p>
+</div>
+
+  <footer class="article-footer">
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://dev-n-gine.akkey.net/article/20180130_nodejs-install/" class="list-group-item">Node.js(npm)をWindowsにインストールする</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/" class="list-group-item">Hugoで作ったブログをGitHub Pagesで公開する</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/20180117_hugo-compass/" class="list-group-item">Compassを使える環境を整える</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/" class="list-group-item">Hugoでブログを作る</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/" class="list-group-item">Articles</a>
+      
+      <a href="https://dev-n-gine.akkey.net/categories/" class="list-group-item">Categories</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/compass/" class="list-group-item">Compass</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/css/" class="list-group-item">Css</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/github-pages/" class="list-group-item">Github Pages</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/hugo/" class="list-group-item">Hugo</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://dev-n-gine.akkey.net/categories/%E6%8A%80%E8%A1%93%E7%B3%BB" class="list-group-item">技術系</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://dev-n-gine.akkey.net/tags/hugo" class="list-group-item">hugo</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/compass" class="list-group-item">compass</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/css" class="list-group-item">css</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/github-pages" class="list-group-item">github-pages</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/node.js" class="list-group-item">node.js</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/npm" class="list-group-item">npm</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/scss-sass" class="list-group-item">scss-sass</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 2018 dev.Engine</span></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

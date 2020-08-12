@@ -10,10 +10,10 @@
     
     <item>
       <title>Compassを使える環境を整える</title>
-      <link>https://dev-n-gine.akkey.net/article/20180117/hugo-compass/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180117_hugo-compass/</link>
       <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20180117/hugo-compass/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180117_hugo-compass/</guid>
       <description>
 
 &lt;p&gt;ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompassを利用してみることにしました。&lt;br /&gt;

@@ -10,10 +10,10 @@
     
     <item>
       <title>Node.js(npm)をWindowsにインストールする</title>
-      <link>https://dev-n-gine.akkey.net/article/20180130/nodejs-install/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180130_nodejs-install/</link>
       <pubDate>Tue, 30 Jan 2018 08:37:40 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20180130/nodejs-install/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180130_nodejs-install/</guid>
       <description>
 
 &lt;p&gt;最近は何をするにしても npm を使ってる気がします。&lt;br /&gt;
@@ -71,10 +71,10 @@ nodist コマンドを使えば一発でインストール可能です。&lt;/p&
     
     <item>
       <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
-      <link>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/</link>
       <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20180118/hugo-github-page/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/</guid>
       <description>
 
 &lt;p&gt;以前書いた &lt;a href=&#34;https://dev-n-gine.akkey.net/post/article1/&#34;&gt;Hugo でブログを作る&lt;/a&gt; という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。&lt;/p&gt;
@@ -161,10 +161,10 @@ None と書いてあるプルダウンメニューがあるので、そこを開
     
     <item>
       <title>Compassを使える環境を整える</title>
-      <link>https://dev-n-gine.akkey.net/article/20180117/hugo-compass/</link>
+      <link>https://dev-n-gine.akkey.net/article/20180117_hugo-compass/</link>
       <pubDate>Wed, 17 Jan 2018 13:01:33 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20180117/hugo-compass/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20180117_hugo-compass/</guid>
       <description>
 
 &lt;p&gt;ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompassを利用してみることにしました。&lt;br /&gt;
@@ -305,10 +305,10 @@ line_comments = false
     
     <item>
       <title>Hugoでブログを作る</title>
-      <link>https://dev-n-gine.akkey.net/article/20171228/hugo-new-blog/</link>
+      <link>https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/</link>
       <pubDate>Thu, 28 Dec 2017 16:40:22 +0900</pubDate>
       
-      <guid>https://dev-n-gine.akkey.net/article/20171228/hugo-new-blog/</guid>
+      <guid>https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/</guid>
       <description>
 
 &lt;p&gt;はじめまして、Akkey(アッキー)と申します。&lt;br /&gt;
