@@ -1,0 +1,27 @@
+name: Build
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Setup hugo
+      run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
+          sudo dpkg -i hugo_0.18.1-64bit.deb
+    - name: Blog Build
+      run: hugo -t original_thame -d docs
+    - name: git setting
+      run: |
+        git config --local user.email ""
+        git config --local user.name "akkey247"
+    - name: Commit files
+      run: |
+        git add .
+        git commit -m "test" -a
+        git pull
+        git push origin master
