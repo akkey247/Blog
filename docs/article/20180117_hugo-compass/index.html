@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="keyword" content="Compass, CSS, SCSS(SASS)">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+
+<link rel="canonical" href="https://dev-n-gine.akkey.net/article/20180117_hugo-compass/">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.png">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Compassを使える環境を整える - dev.Engine</title>
+    
+<meta name="description" content="ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass">
+
+<meta property="og:title" content="Compassを使える環境を整える - dev.Engine">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dev-n-gine.akkey.net/article/20180117_hugo-compass/">
+<meta property="og:image" content="https://dev-n-gine.akkey.net/images/default.png">
+<meta property="og:site_name" content="dev.Engine">
+<meta property="og:description" content="ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="dev.Engine">
+<meta name="twitter:url" content="https://dev-n-gine.akkey.net/article/20180117_hugo-compass/">
+<meta name="twitter:title" content="Compassを使える環境を整える - dev.Engine">
+<meta name="twitter:description" content="ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass">
+<meta name="twitter:image" content="https://dev-n-gine.akkey.net/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https:\/\/dev-n-gine.akkey.net\/"
+    },
+    "headline": "Compassを使える環境を整える - dev.Engine",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:\/\/dev-n-gine.akkey.net\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-01-17T13:01:33JST",
+    "dateModified": "2018-01-17T13:01:33JST",
+    "author": {
+      "@type": "Person",
+      "name": "dev.Engine"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "dev.Engine",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/dev-n-gine.akkey.net\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompass"
+  }
+</script>
+
+
+    <link href="https://dev-n-gine.akkey.net/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-87724467-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"><img src=""></span>
+              <span class="icon-bar"><img src=""></span>
+              <span class="icon-bar"><img src=""></span>
+            </button>
+            <a class="navbar-brand" href="https://dev-n-gine.akkey.net/">d<span>e</span>v.Engin<span>e</span></a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li>
+                <a href="https://github.com/akkey247">
+                  <img src="/img/github.png">
+                </a>
+              </li>
+              
+              
+              
+              <li>
+                <a href="https://dev-n-gine.akkey.net/">
+                  <img src="/img/akkey.png">
+                </a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-01-17T13:01:33JST">Jan 17, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://dev-n-gine.akkey.net/article/">article</a></li>
+      
+    </ul>
+
+    <h1 class="title">Compassを使える環境を整える</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>ブログを作成するにあたってCSSを触っているのですが、CSSのまま編集するとかなり手間なので、この機会にSass(SCSS)とCompassを利用してみることにしました。<br />
+今回も環境はWindowsです。</p>
+
+<h2 id="rubyをインストールする">Rubyをインストールする</h2>
+
+<p>まずは準備から。<br />
+以下のページから RubyInstaller をダウンロードし、インストールします。</p>
+
+<p><a href="https://rubyinstaller.org/">https://rubyinstaller.org/</a></p>
+
+<p>[インストール時のメモ]<br />
+・Td/Tk サポートのインストールはチェックしなくてもOK<br />
+・Rubyの実行ファイルへパスを通す設定にチェックしておく<br />
+・.rb,.rbwのファイル関連付け設定のチェックは任意</p>
+
+<h2 id="compassをインストールする">Compassをインストールする</h2>
+
+<p>Rubyのインストールが終わったら、早速Compassをインストールします。<br />
+コマンドプロンプトで以下のコマンドを実行します。</p>
+
+<pre><code>gem update --system
+gem install compass
+</code></pre>
+
+<p>インストールが終わったら、ちゃんと入っているか確認してみます。</p>
+
+<pre><code>compass -v
+</code></pre>
+
+<p>これでバージョンが表示されればOK、Compassを使う環境作成は完了です。<br />
+と、本来の目的は果たしたわけですが、ここから使い方についても調べてみます。</p>
+
+<h2 id="compassの新規プロジェクト作成">Compassの新規プロジェクト作成</h2>
+
+<p>Compassを利用する前にはまず新規プロジェクトを作る必要があるようですね。<br />
+Compassを利用したいディレクトリで以下のコマンドを実行することで、新規プロジェクトが作成されます。</p>
+
+<pre><code>compass create
+</code></pre>
+
+<p>最小限の構成で初期化したい場合は <code>--bare</code> オプションを付けると良いようです。</p>
+
+<pre><code>compass create --bare
+</code></pre>
+
+<p>実行後、以下のディレクトリが作成されていれば成功です。(ちなみに <code>--bare</code> オプション有りの場合です。)</p>
+
+<pre><code>root
+├ sass/      // Sass(SCSS)ファイルが入るディレクトリ
+└ config.rb  // Compass設定ファイル
+</code></pre>
+
+<h2 id="scssをビルドする">scssをビルドする</h2>
+
+<p>では早速、試しにSCSSのサンプルコードをビルドしてみます。<br />
+まずは、対象のSCSSファイルを作成して、 <code>sass</code> ディレクトリ配下に設置します。</p>
+
+<p>sample.scss</p>
+
+<pre><code>@import 'compass';
+.sample {
+  @include border-radius(3px);
+}
+</code></pre>
+
+<pre><code>root
+├ sass/
+├ └ sample.sass  // ★追加したファイル
+└ config.rb
+</code></pre>
+
+<p>ビルドをしてみます。<br />
+以下のコマンドを実行。</p>
+
+<pre><code>compass watch
+</code></pre>
+
+<p>実行すると、 <code>stylesheet/</code> , <code>.sass-cache/</code> ディレクトリが作成されます。<br />
+<code>stylesheet/</code> ディレクトリ配下にサンプルコードのビルド結果ファイルが格納されます。</p>
+
+<pre><code>root
+├ .sass-cache/
+├ sass/
+│  └ sample.scss
+├ stylesheet/    // ★ビルド後のCSSが入るディレクトリ
+│  └ sample.css  // ★CSSファイル
+└ config.rb
+</code></pre>
+
+<p>sample.css</p>
+
+<pre><code>/* line 2, ../sass/sample.scss */
+.sample {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+</code></pre>
+
+<p>これでビルド完了です。</p>
+
+<h2 id="エラーでビルド出来ない時">エラーでビルド出来ない時</h2>
+
+<p>最初ビルドがうまく動かない時がありました。<br />
+エラーメッセージにはこんな表示が。</p>
+
+<pre><code>Error: Invalid Windows-31J character
+</code></pre>
+
+<p>調べてみると <code>config.rb</code> に以下の１行を追加することでビルド出来るようになるようです。</p>
+
+<pre><code>Encoding.default_external = 'utf-8'
+</code></pre>
+
+<p>[参考]<br />
+<a href="http://blog.a4works.co.jp/archives/326">Windows環境のcompassで”Invalid Windows-31J character”のエラー</a></p>
+
+<h2 id="ビルド後のcssのコメントが邪魔な時">ビルド後のcssのコメントが邪魔な時</h2>
+
+<p>個人的にビルドされたCSSに入る↓このコメントが邪魔だったので、消す方法を探してみました。<br />
+どうやら、元々 <code>config.rb</code> に書いてある <code># line_comments = false</code> をコメント解除すれば良いみたいですね。</p>
+
+<pre><code>require 'compass/import-once/activate'
+
+http_path = &quot;/&quot;
+css_dir = &quot;stylesheets&quot;
+sass_dir = &quot;sass&quot;
+images_dir = &quot;images&quot;
+javascripts_dir = &quot;javascripts&quot;
+
+# ビルド後のコメント非表示
+line_comments = false
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://dev-n-gine.akkey.net/article/20180130_nodejs-install/" class="list-group-item">Node.js(npm)をWindowsにインストールする</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/" class="list-group-item">Hugoで作ったブログをGitHub Pagesで公開する</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/20180117_hugo-compass/" class="list-group-item">Compassを使える環境を整える</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/20171228_hugo-new-blog/" class="list-group-item">Hugoでブログを作る</a>
+      
+      <a href="https://dev-n-gine.akkey.net/article/" class="list-group-item">Articles</a>
+      
+      <a href="https://dev-n-gine.akkey.net/categories/" class="list-group-item">Categories</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/compass/" class="list-group-item">Compass</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/css/" class="list-group-item">Css</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/github-pages/" class="list-group-item">Github Pages</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/hugo/" class="list-group-item">Hugo</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://dev-n-gine.akkey.net/categories/%E6%8A%80%E8%A1%93%E7%B3%BB" class="list-group-item">技術系</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://dev-n-gine.akkey.net/tags/hugo" class="list-group-item">hugo</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/compass" class="list-group-item">compass</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/css" class="list-group-item">css</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/github-pages" class="list-group-item">github-pages</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/node.js" class="list-group-item">node.js</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/npm" class="list-group-item">npm</a>
+      
+      <a href="https://dev-n-gine.akkey.net/tags/scss-sass" class="list-group-item">scss-sass</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 2018 dev.Engine</span></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

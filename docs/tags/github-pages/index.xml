@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github Pages on dev.Engine</title>
+    <link>https://dev-n-gine.akkey.net/tags/github-pages/index.xml</link>
+    <description>Recent content in Github Pages on dev.Engine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <atom:link href="https://dev-n-gine.akkey.net/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugoで作ったブログをGitHub Pagesで公開する</title>
+      <link>https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/</link>
+      <pubDate>Thu, 18 Jan 2018 12:19:52 +0900</pubDate>
+      
+      <guid>https://dev-n-gine.akkey.net/article/20180118_hugo-github-page/</guid>
+      <description>
+
+&lt;p&gt;以前書いた &lt;a href=&#34;https://dev-n-gine.akkey.net/post/article1/&#34;&gt;Hugo でブログを作る&lt;/a&gt; という記事で作ったブログサイトを GitHub Pages で公開するまでの方法を書いてみます。&lt;/p&gt;
+
+&lt;h2 id=&#34;githubで新規リポジトリを作成する&#34;&gt;GitHubで新規リポジトリを作成する&lt;/h2&gt;
+
+&lt;p&gt;まずは、GitHubでリポジトリを作成します。&lt;br /&gt;
+仮に &lt;code&gt;Blog&lt;/code&gt; という名前のリポジトリで作成してみます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dev-n-gine.akkey.net/20180118/hugo-github-page/img/1.png&#34; alt=&#34;リポジトリ作成&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作り終わったら、ローカル環境へクローンしてきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:ユーザー名/Blog.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;クローンした空のソースの中に Hugo で作成したサイトをコピーしてきます。&lt;br /&gt;
+後述しますが、一旦 &lt;code&gt;public&lt;/code&gt; ディレクトリは一旦消しています。&lt;/p&gt;
+
+&lt;p&gt;こんな構成になります。&lt;br /&gt;
+(サブディレクトリの中身は若干端折ってます。)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Blog/
+├ archetypes/
+├ content/
+├ data/
+├ layouts/
+├ static/
+├ themes/
+├ └ hugo_theme_beg/  // 前の記事で使ったテーマ
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一旦、コミットしておきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;公開用ディレクトリを作成する&#34;&gt;公開用ディレクトリを作成する&lt;/h2&gt;
+
+&lt;p&gt;Hugoでビルドした際に自動で生成されるディレクトリは &lt;code&gt;public&lt;/code&gt; でしたが、&lt;br /&gt;
+GitHub Pagesでは公開ディレクトリは &lt;code&gt;docs&lt;/code&gt; という名前にしなくてはいけません。&lt;br /&gt;
+なので、ビルドする際にディレクトリ名を指定することにします。&lt;/p&gt;
+
+&lt;p&gt;ディレクトリ名を指定してビルドするには、コマンドに &lt;code&gt;-d ディレクトリ名&lt;/code&gt; と追加します。&lt;br /&gt;
+早速ディレクトリ名に &lt;code&gt;docs&lt;/code&gt; を指定してビルドしてみます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo -t hugo_theme_beg -d docs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;docs&lt;/code&gt; という名前でディレクトリが作成されたと思います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Blog/
+├ archetypes/
+├ content/
+├ data/
+├ docs/     // ★作成された
+├ layouts/
+├ static/
+├ themes/
+└ config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;github-pagesへ反映する&#34;&gt;GitHub Pagesへ反映する&lt;/h2&gt;
+
+&lt;p&gt;まずは、作ったソースをリモートリポジトリへプッシュします。&lt;/p&gt;
+
+&lt;p&gt;プッシュが終わったら、GitHubから設定を変更します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dev-n-gine.akkey.net/20180118/hugo-github-page/img/2.png&#34; alt=&#34;設定変更&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;GitHub の setting ページにある GitHub Pages 項目へ移動します。&lt;br /&gt;
+None と書いてあるプルダウンメニューがあるので、そこを開いて「master branch/docs folder」を選びます。&lt;br /&gt;
+選択したら「Save」ボタンを押してください。&lt;br /&gt;
+これで準備OKです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ブログを確認する&#34;&gt;ブログを確認する&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;https://ユーザー名.github.io/Blog/&lt;/code&gt; のURLにアクセスすればページが表示されるはずです。&lt;/p&gt;
+
+&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;
+
+&lt;p&gt;本当はHugoで作ったプロジェクトをローカルリポジトリとして初期化してからリモートに上げる流れがスムーズなのかもしれないですね。&lt;br /&gt;
+こっちの方が楽そうだったので、このやり方で反映してみました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
