@@ -16,7 +16,7 @@ jobs:
       - name: Build hugo
         run: hugo -t original_thame -d docs
       - name: Create CNAME
-        run: echo "" > docs/CNAME
+        run: echo "dev-n-gine.akkey.net" > docs/CNAME
       - name: git setting
         run: |
           git config --local user.email ""
