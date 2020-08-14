@@ -13,10 +13,10 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
           sudo dpkg -i hugo_0.18.1-64bit.deb
-      - name: Blog Build
+      - name: Build hugo
         run: hugo -t original_thame -d docs
       - name: Create CNAME
-        run: echo "dev-n-gine.akkey.net" > docs/CNAME
+        run: echo "" > docs/CNAME
       - name: git setting
         run: |
           git config --local user.email ""
