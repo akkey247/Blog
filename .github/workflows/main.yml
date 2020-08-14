@@ -15,13 +15,14 @@ jobs:
           sudo dpkg -i hugo_0.18.1-64bit.deb
       - name: Blog Build
         run: hugo -t original_thame -d docs
+      - name: Create CNAME
+        run: echo "dev-n-gine.akkey.net" > docs/CNAME
       - name: git setting
         run: |
           git config --local user.email ""
           git config --local user.name "akkey247"
       - name: Commit files
         run: |
-          git add .
-          git commit -m "build" -a
+          git commit -m "build" -a --allow-empty
           git pull
           git push origin master
