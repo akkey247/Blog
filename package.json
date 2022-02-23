@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "hugo server -t original_thame -w -D",
-    "new": "hugo new -- article/`date +%Y%m%d`_new-article.md",
+    "new": "hugo new -- article/`date +%Y%m%d`_`if [ -n \"${npm_config_name}\" ]; then echo ${npm_config_name}; else echo 'new'; fi`.md",
     "build": "hugo -t original_thame -d docs"
   },
   "repository": {
